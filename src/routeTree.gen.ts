@@ -19,7 +19,10 @@ import { Route as SignupRouteImport } from './routes/signup'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
 import { Route as AuthenticatedLearnIndexRouteImport } from './routes/_authenticated/learn.index'
+import { Route as AuthenticatedLearnTopicIdRouteImport } from './routes/_authenticated/learn.$topicId'
 import { Route as AuthenticatedLearnNewRouteImport } from './routes/_authenticated/learn.new'
+import { Route as AuthenticatedResultsAttemptIdRouteImport } from './routes/_authenticated/results.$attemptId'
+import { Route as AuthenticatedStudySessionIdRouteImport } from './routes/_authenticated/study.$sessionId'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -70,11 +73,29 @@ const AuthenticatedLearnIndexRoute = AuthenticatedLearnIndexRouteImport.update({
   path: '/learn/',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
+const AuthenticatedLearnTopicIdRoute =
+  AuthenticatedLearnTopicIdRouteImport.update({
+    id: '/learn/$topicId',
+    path: '/learn/$topicId',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 const AuthenticatedLearnNewRoute = AuthenticatedLearnNewRouteImport.update({
   id: '/learn/new',
   path: '/learn/new',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
+const AuthenticatedResultsAttemptIdRoute =
+  AuthenticatedResultsAttemptIdRouteImport.update({
+    id: '/results/$attemptId',
+    path: '/results/$attemptId',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedStudySessionIdRoute =
+  AuthenticatedStudySessionIdRouteImport.update({
+    id: '/study/$sessionId',
+    path: '/study/$sessionId',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -85,7 +106,10 @@ export interface FileRoutesByFullPath {
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
+  '/learn/$topicId': typeof AuthenticatedLearnTopicIdRoute
   '/learn/new': typeof AuthenticatedLearnNewRoute
+  '/results/$attemptId': typeof AuthenticatedResultsAttemptIdRoute
+  '/study/$sessionId': typeof AuthenticatedStudySessionIdRoute
   '/learn/': typeof AuthenticatedLearnIndexRoute
 }
 export interface FileRoutesByTo {
@@ -97,7 +121,10 @@ export interface FileRoutesByTo {
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
+  '/learn/$topicId': typeof AuthenticatedLearnTopicIdRoute
   '/learn/new': typeof AuthenticatedLearnNewRoute
+  '/results/$attemptId': typeof AuthenticatedResultsAttemptIdRoute
+  '/study/$sessionId': typeof AuthenticatedStudySessionIdRoute
   '/learn': typeof AuthenticatedLearnIndexRoute
 }
 export interface FileRoutesById {
@@ -111,7 +138,10 @@ export interface FileRoutesById {
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
   '/_authenticated/dashboard': typeof AuthenticatedDashboardRoute
+  '/_authenticated/learn/$topicId': typeof AuthenticatedLearnTopicIdRoute
   '/_authenticated/learn/new': typeof AuthenticatedLearnNewRoute
+  '/_authenticated/results/$attemptId': typeof AuthenticatedResultsAttemptIdRoute
+  '/_authenticated/study/$sessionId': typeof AuthenticatedStudySessionIdRoute
   '/_authenticated/learn/': typeof AuthenticatedLearnIndexRoute
 }
 export interface FileRouteTypes {
@@ -125,7 +155,10 @@ export interface FileRouteTypes {
     | '/signup'
     | '/terms'
     | '/dashboard'
+    | '/learn/$topicId'
     | '/learn/new'
+    | '/results/$attemptId'
+    | '/study/$sessionId'
     | '/learn/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -137,7 +170,10 @@ export interface FileRouteTypes {
     | '/signup'
     | '/terms'
     | '/dashboard'
+    | '/learn/$topicId'
     | '/learn/new'
+    | '/results/$attemptId'
+    | '/study/$sessionId'
     | '/learn'
   id:
     | '__root__'
@@ -150,7 +186,10 @@ export interface FileRouteTypes {
     | '/signup'
     | '/terms'
     | '/_authenticated/dashboard'
+    | '/_authenticated/learn/$topicId'
     | '/_authenticated/learn/new'
+    | '/_authenticated/results/$attemptId'
+    | '/_authenticated/study/$sessionId'
     | '/_authenticated/learn/'
   fileRoutesById: FileRoutesById
 }
@@ -237,6 +276,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedLearnIndexRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/_authenticated/learn/$topicId': {
+      id: '/_authenticated/learn/$topicId'
+      path: '/learn/$topicId'
+      fullPath: '/learn/$topicId'
+      preLoaderRoute: typeof AuthenticatedLearnTopicIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
     '/_authenticated/learn/new': {
       id: '/_authenticated/learn/new'
       path: '/learn/new'
@@ -244,18 +290,38 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedLearnNewRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/_authenticated/results/$attemptId': {
+      id: '/_authenticated/results/$attemptId'
+      path: '/results/$attemptId'
+      fullPath: '/results/$attemptId'
+      preLoaderRoute: typeof AuthenticatedResultsAttemptIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/study/$sessionId': {
+      id: '/_authenticated/study/$sessionId'
+      path: '/study/$sessionId'
+      fullPath: '/study/$sessionId'
+      preLoaderRoute: typeof AuthenticatedStudySessionIdRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
   }
 }
 
 interface AuthenticatedRouteRouteChildren {
   AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
+  AuthenticatedLearnTopicIdRoute: typeof AuthenticatedLearnTopicIdRoute
   AuthenticatedLearnNewRoute: typeof AuthenticatedLearnNewRoute
+  AuthenticatedResultsAttemptIdRoute: typeof AuthenticatedResultsAttemptIdRoute
+  AuthenticatedStudySessionIdRoute: typeof AuthenticatedStudySessionIdRoute
   AuthenticatedLearnIndexRoute: typeof AuthenticatedLearnIndexRoute
 }
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
   AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
+  AuthenticatedLearnTopicIdRoute: AuthenticatedLearnTopicIdRoute,
   AuthenticatedLearnNewRoute: AuthenticatedLearnNewRoute,
+  AuthenticatedResultsAttemptIdRoute: AuthenticatedResultsAttemptIdRoute,
+  AuthenticatedStudySessionIdRoute: AuthenticatedStudySessionIdRoute,
   AuthenticatedLearnIndexRoute: AuthenticatedLearnIndexRoute,
 }
 
