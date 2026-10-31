@@ -18,6 +18,14 @@ import { Route as ResetPasswordRouteImport } from './routes/reset-password'
 import { Route as SignupRouteImport } from './routes/signup'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated/dashboard'
+import { Route as AuthenticatedExamModeRouteImport } from './routes/_authenticated/exam-mode'
+import { Route as AuthenticatedForgettingRadarRouteImport } from './routes/_authenticated/forgetting-radar'
+import { Route as AuthenticatedHistoryRouteImport } from './routes/_authenticated/history'
+import { Route as AuthenticatedMemoryFingerprintRouteImport } from './routes/_authenticated/memory-fingerprint'
+import { Route as AuthenticatedProfileRouteImport } from './routes/_authenticated/profile'
+import { Route as AuthenticatedRevisionPlannerRouteImport } from './routes/_authenticated/revision-planner'
+import { Route as AuthenticatedSettingsRouteImport } from './routes/_authenticated/settings'
+import { Route as AuthenticatedWeakSpotsRouteImport } from './routes/_authenticated/weak-spots'
 import { Route as AuthenticatedLearnIndexRouteImport } from './routes/_authenticated/learn.index'
 import { Route as AuthenticatedLearnTopicIdRouteImport } from './routes/_authenticated/learn.$topicId'
 import { Route as AuthenticatedLearnNewRouteImport } from './routes/_authenticated/learn.new'
@@ -68,6 +76,49 @@ const AuthenticatedDashboardRoute = AuthenticatedDashboardRouteImport.update({
   path: '/dashboard',
   getParentRoute: () => AuthenticatedRouteRoute,
 } as any)
+const AuthenticatedExamModeRoute = AuthenticatedExamModeRouteImport.update({
+  id: '/exam-mode',
+  path: '/exam-mode',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedForgettingRadarRoute =
+  AuthenticatedForgettingRadarRouteImport.update({
+    id: '/forgetting-radar',
+    path: '/forgetting-radar',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedHistoryRoute = AuthenticatedHistoryRouteImport.update({
+  id: '/history',
+  path: '/history',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedMemoryFingerprintRoute =
+  AuthenticatedMemoryFingerprintRouteImport.update({
+    id: '/memory-fingerprint',
+    path: '/memory-fingerprint',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedProfileRoute = AuthenticatedProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedRevisionPlannerRoute =
+  AuthenticatedRevisionPlannerRouteImport.update({
+    id: '/revision-planner',
+    path: '/revision-planner',
+    getParentRoute: () => AuthenticatedRouteRoute,
+  } as any)
+const AuthenticatedSettingsRoute = AuthenticatedSettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
+const AuthenticatedWeakSpotsRoute = AuthenticatedWeakSpotsRouteImport.update({
+  id: '/weak-spots',
+  path: '/weak-spots',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
 const AuthenticatedLearnIndexRoute = AuthenticatedLearnIndexRouteImport.update({
   id: '/learn/',
   path: '/learn/',
@@ -106,6 +157,14 @@ export interface FileRoutesByFullPath {
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
+  '/exam-mode': typeof AuthenticatedExamModeRoute
+  '/forgetting-radar': typeof AuthenticatedForgettingRadarRoute
+  '/history': typeof AuthenticatedHistoryRoute
+  '/memory-fingerprint': typeof AuthenticatedMemoryFingerprintRoute
+  '/profile': typeof AuthenticatedProfileRoute
+  '/revision-planner': typeof AuthenticatedRevisionPlannerRoute
+  '/settings': typeof AuthenticatedSettingsRoute
+  '/weak-spots': typeof AuthenticatedWeakSpotsRoute
   '/learn/$topicId': typeof AuthenticatedLearnTopicIdRoute
   '/learn/new': typeof AuthenticatedLearnNewRoute
   '/results/$attemptId': typeof AuthenticatedResultsAttemptIdRoute
@@ -121,6 +180,14 @@ export interface FileRoutesByTo {
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
+  '/exam-mode': typeof AuthenticatedExamModeRoute
+  '/forgetting-radar': typeof AuthenticatedForgettingRadarRoute
+  '/history': typeof AuthenticatedHistoryRoute
+  '/memory-fingerprint': typeof AuthenticatedMemoryFingerprintRoute
+  '/profile': typeof AuthenticatedProfileRoute
+  '/revision-planner': typeof AuthenticatedRevisionPlannerRoute
+  '/settings': typeof AuthenticatedSettingsRoute
+  '/weak-spots': typeof AuthenticatedWeakSpotsRoute
   '/learn/$topicId': typeof AuthenticatedLearnTopicIdRoute
   '/learn/new': typeof AuthenticatedLearnNewRoute
   '/results/$attemptId': typeof AuthenticatedResultsAttemptIdRoute
@@ -138,6 +205,14 @@ export interface FileRoutesById {
   '/signup': typeof SignupRoute
   '/terms': typeof TermsRoute
   '/_authenticated/dashboard': typeof AuthenticatedDashboardRoute
+  '/_authenticated/exam-mode': typeof AuthenticatedExamModeRoute
+  '/_authenticated/forgetting-radar': typeof AuthenticatedForgettingRadarRoute
+  '/_authenticated/history': typeof AuthenticatedHistoryRoute
+  '/_authenticated/memory-fingerprint': typeof AuthenticatedMemoryFingerprintRoute
+  '/_authenticated/profile': typeof AuthenticatedProfileRoute
+  '/_authenticated/revision-planner': typeof AuthenticatedRevisionPlannerRoute
+  '/_authenticated/settings': typeof AuthenticatedSettingsRoute
+  '/_authenticated/weak-spots': typeof AuthenticatedWeakSpotsRoute
   '/_authenticated/learn/$topicId': typeof AuthenticatedLearnTopicIdRoute
   '/_authenticated/learn/new': typeof AuthenticatedLearnNewRoute
   '/_authenticated/results/$attemptId': typeof AuthenticatedResultsAttemptIdRoute
@@ -155,6 +230,14 @@ export interface FileRouteTypes {
     | '/signup'
     | '/terms'
     | '/dashboard'
+    | '/exam-mode'
+    | '/forgetting-radar'
+    | '/history'
+    | '/memory-fingerprint'
+    | '/profile'
+    | '/revision-planner'
+    | '/settings'
+    | '/weak-spots'
     | '/learn/$topicId'
     | '/learn/new'
     | '/results/$attemptId'
@@ -170,6 +253,14 @@ export interface FileRouteTypes {
     | '/signup'
     | '/terms'
     | '/dashboard'
+    | '/exam-mode'
+    | '/forgetting-radar'
+    | '/history'
+    | '/memory-fingerprint'
+    | '/profile'
+    | '/revision-planner'
+    | '/settings'
+    | '/weak-spots'
     | '/learn/$topicId'
     | '/learn/new'
     | '/results/$attemptId'
@@ -186,6 +277,14 @@ export interface FileRouteTypes {
     | '/signup'
     | '/terms'
     | '/_authenticated/dashboard'
+    | '/_authenticated/exam-mode'
+    | '/_authenticated/forgetting-radar'
+    | '/_authenticated/history'
+    | '/_authenticated/memory-fingerprint'
+    | '/_authenticated/profile'
+    | '/_authenticated/revision-planner'
+    | '/_authenticated/settings'
+    | '/_authenticated/weak-spots'
     | '/_authenticated/learn/$topicId'
     | '/_authenticated/learn/new'
     | '/_authenticated/results/$attemptId'
@@ -269,6 +368,62 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedDashboardRouteImport
       parentRoute: typeof AuthenticatedRouteRoute
     }
+    '/_authenticated/exam-mode': {
+      id: '/_authenticated/exam-mode'
+      path: '/exam-mode'
+      fullPath: '/exam-mode'
+      preLoaderRoute: typeof AuthenticatedExamModeRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/forgetting-radar': {
+      id: '/_authenticated/forgetting-radar'
+      path: '/forgetting-radar'
+      fullPath: '/forgetting-radar'
+      preLoaderRoute: typeof AuthenticatedForgettingRadarRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/history': {
+      id: '/_authenticated/history'
+      path: '/history'
+      fullPath: '/history'
+      preLoaderRoute: typeof AuthenticatedHistoryRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/memory-fingerprint': {
+      id: '/_authenticated/memory-fingerprint'
+      path: '/memory-fingerprint'
+      fullPath: '/memory-fingerprint'
+      preLoaderRoute: typeof AuthenticatedMemoryFingerprintRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/profile': {
+      id: '/_authenticated/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof AuthenticatedProfileRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/revision-planner': {
+      id: '/_authenticated/revision-planner'
+      path: '/revision-planner'
+      fullPath: '/revision-planner'
+      preLoaderRoute: typeof AuthenticatedRevisionPlannerRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/settings': {
+      id: '/_authenticated/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof AuthenticatedSettingsRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
+    '/_authenticated/weak-spots': {
+      id: '/_authenticated/weak-spots'
+      path: '/weak-spots'
+      fullPath: '/weak-spots'
+      preLoaderRoute: typeof AuthenticatedWeakSpotsRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
     '/_authenticated/learn/': {
       id: '/_authenticated/learn/'
       path: '/learn'
@@ -309,6 +464,14 @@ declare module '@tanstack/react-router' {
 
 interface AuthenticatedRouteRouteChildren {
   AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
+  AuthenticatedExamModeRoute: typeof AuthenticatedExamModeRoute
+  AuthenticatedForgettingRadarRoute: typeof AuthenticatedForgettingRadarRoute
+  AuthenticatedHistoryRoute: typeof AuthenticatedHistoryRoute
+  AuthenticatedMemoryFingerprintRoute: typeof AuthenticatedMemoryFingerprintRoute
+  AuthenticatedProfileRoute: typeof AuthenticatedProfileRoute
+  AuthenticatedRevisionPlannerRoute: typeof AuthenticatedRevisionPlannerRoute
+  AuthenticatedSettingsRoute: typeof AuthenticatedSettingsRoute
+  AuthenticatedWeakSpotsRoute: typeof AuthenticatedWeakSpotsRoute
   AuthenticatedLearnTopicIdRoute: typeof AuthenticatedLearnTopicIdRoute
   AuthenticatedLearnNewRoute: typeof AuthenticatedLearnNewRoute
   AuthenticatedResultsAttemptIdRoute: typeof AuthenticatedResultsAttemptIdRoute
@@ -318,6 +481,14 @@ interface AuthenticatedRouteRouteChildren {
 
 const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
   AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
+  AuthenticatedExamModeRoute: AuthenticatedExamModeRoute,
+  AuthenticatedForgettingRadarRoute: AuthenticatedForgettingRadarRoute,
+  AuthenticatedHistoryRoute: AuthenticatedHistoryRoute,
+  AuthenticatedMemoryFingerprintRoute: AuthenticatedMemoryFingerprintRoute,
+  AuthenticatedProfileRoute: AuthenticatedProfileRoute,
+  AuthenticatedRevisionPlannerRoute: AuthenticatedRevisionPlannerRoute,
+  AuthenticatedSettingsRoute: AuthenticatedSettingsRoute,
+  AuthenticatedWeakSpotsRoute: AuthenticatedWeakSpotsRoute,
   AuthenticatedLearnTopicIdRoute: AuthenticatedLearnTopicIdRoute,
   AuthenticatedLearnNewRoute: AuthenticatedLearnNewRoute,
   AuthenticatedResultsAttemptIdRoute: AuthenticatedResultsAttemptIdRoute,
