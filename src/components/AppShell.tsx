@@ -74,7 +74,7 @@ export function AppShell() {
   const navigate = useNavigate();
   const signOut = async () => {
     await supabase.auth.signOut();
-    navigate({ to: "/login" });
+    navigate({ to: "/login", search: {} });
   };
   return (
     <div className="flex min-h-screen bg-background">
@@ -84,10 +84,10 @@ export function AppShell() {
           {!collapsed && <span className="font-display text-sm font-semibold">AI Memory Trainer</span>}
         </div>
         <NavList collapsed={collapsed} />
-        <button onClick={signOut} className={cn("mt-2 flex items-center gap-3 rounded-lg px-3 py-2 text-sm text-sidebar-foreground/80 hover:bg-sidebar-accent/60", collapsed && "justify-center px-0")}>
+        <Button variant="ghost" onClick={signOut} className={cn("mt-2 justify-start gap-3 text-sidebar-foreground/80", collapsed && "justify-center px-0")}>
           <LogOut className="size-4" />
           {!collapsed && "Sign out"}
-        </button>
+        </Button>
       </aside>
 
       <Sheet open={open} onOpenChange={setOpen}>

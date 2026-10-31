@@ -36,7 +36,7 @@ function parseJson(text: string): unknown {
   return JSON.parse(text.slice(start, end + 1));
 }
 
-export async function callFastApi<T>(path: string, body: unknown, schema: z.ZodType<T>, token?: string): Promise<T> {
+export async function callFastApi<T>(path: string, body: unknown, schema: z.ZodType<T, z.ZodTypeDef, unknown>, token?: string): Promise<T> {
   const base = process.env["AI_BACKEND_URL"]!.replace(/\/$/, "");
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), 90_000);
@@ -57,7 +57,7 @@ export async function callFastApi<T>(path: string, body: unknown, schema: z.ZodT
   }
 }
 
-export async function aiJson<T>(task: string, schema: z.ZodType<T>, schemaHint: string): Promise<T> {
+export async function aiJson<T>(task: string, schema: z.ZodType<T, z.ZodTypeDef, unknown>, schemaHint: string): Promise<T> {
   let lastErr = "";
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
