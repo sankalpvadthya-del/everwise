@@ -63,7 +63,8 @@ export function nextIntervalDays(
   if (scorePercent >= 70) step += 1;
   if (scorePercent >= 85 && confidentAndCorrectRatio >= 0.6) step += 1;
   step = Math.max(0, step - 1);
-  if (step < BASE_INTERVALS.length) return BASE_INTERVALS[step];
+  const interval = BASE_INTERVALS[step];
+  if (interval !== undefined) return interval;
   return 14 * Math.pow(2, step - BASE_INTERVALS.length + 1);
 }
 
@@ -92,20 +93,22 @@ const DAY = 86_400_000;
 export function analyseTopic(obs: Observation[], recurringErrors = 0, now = new Date()): TopicMemory {
   const sorted = [...obs].sort((a, b) => +new Date(a.observed_at) - +new Date(b.observed_at));
   const attempts = sorted.length;
-  if (attempts === 0) {
+  const latest = sorted.at(-1);
+  const first = sorted[0];
+  if (!latest || !first) {
     return {
       attempts, latestScore: null, initialScore: null, daysSinceLast: null, successful: 0, unsuccessful: 0,
       trend: "unknown", nextReviewDate: null, status: "insufficient",
       reason: "No recall sessions recorded yet.",
     };
   }
-  const latest = sorted[attempts - 1];
   const latestScore = Number(latest.recall_score);
   const successful = sorted.filter((o) => Number(o.recall_score) >= 70).length;
   const daysSinceLast = Math.floor((+now - +new Date(latest.observed_at)) / DAY);
   let trend: TopicMemory["trend"] = "unknown";
-  if (attempts >= 2) {
-    const prev = Number(sorted[attempts - 2].recall_score);
+  const previous = sorted.at(-2);
+  if (previous) {
+    const prev = Number(previous.recall_score);
     trend = latestScore - prev > 5 ? "improving" : prev - latestScore > 5 ? "declining" : "flat";
   }
   const interval = nextIntervalDays(Math.max(0, successful - (latestScore >= 70 ? 1 : 0)), latestScore);
@@ -133,7 +136,7 @@ export function analyseTopic(obs: Observation[], recurringErrors = 0, now = new 
     reason = `Recall was ${latestScore}% in recent attempts.`;
   }
   return {
-    attempts, latestScore, initialScore: Number(sorted[0].recall_score), daysSinceLast, successful,
+    attempts, latestScore, initialScore: Number(first.recall_score), daysSinceLast, successful,
     unsuccessful: attempts - successful, trend, nextReviewDate, status, reason,
   };
 }
@@ -199,9 +202,10 @@ export function calibration(rows: { confidence: Confidence | null; status: EvalS
  */
 export function estimateDecay(obs: Observation[]): { r0: number; stabilityDays: number } | null {
   const sorted = [...obs].sort((a, b) => +new Date(a.observed_at) - +new Date(b.observed_at));
-  if (sorted.length < 3) return null;
-  const t0 = +new Date(sorted[0].observed_at);
-  const span = (+new Date(sorted[sorted.length - 1].observed_at) - t0) / DAY;
+  const first = sorted[0]; const last = sorted.at(-1);
+  if (sorted.length < 3 || !first || !last) return null;
+  const t0 = +new Date(first.observed_at);
+  const span = (+new Date(last.observed_at) - t0) / DAY;
   if (span < 2) return null;
   const pts = sorted.map((o) => ({ t: (+new Date(o.observed_at) - t0) / DAY, y: Math.log(Math.max(Number(o.recall_score), 1)) }));
   const n = pts.length;

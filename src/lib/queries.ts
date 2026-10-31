@@ -4,7 +4,8 @@ import { supabase } from "@/integrations/supabase/client";
 async function unwrap<T>(p: PromiseLike<{ data: T | null; error: { message: string } | null }>): Promise<T> {
   const { data, error } = await p;
   if (error) throw new Error(error.message);
-  return data as T;
+  if (data === null) throw new Error("No data returned");
+  return data;
 }
 
 export const topicsQ = () =>
@@ -59,7 +60,9 @@ export const profileQ = () =>
     queryFn: async () => {
       const { data: u } = await supabase.auth.getUser();
       if (!u.user) throw new Error("Not signed in");
-      return unwrap(supabase.from("profiles").select("*").eq("id", u.user.id).maybeSingle());
+      const { data, error } = await supabase.from("profiles").select("*").eq("id", u.user.id).maybeSingle();
+      if (error) throw new Error(error.message);
+      return data;
     },
   });
 

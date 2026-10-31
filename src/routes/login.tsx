@@ -12,7 +12,7 @@ import { Label } from "@/components/ui/label";
 const schema = z.object({ email: z.string().trim().email("Enter a valid email"), password: z.string().min(1, "Enter your password") });
 
 export const Route = createFileRoute("/login")({
-  validateSearch: (s: Record<string, unknown>) => ({ redirect: typeof s.redirect === "string" && s.redirect.startsWith("/") && !s.redirect.startsWith("//") ? s.redirect : undefined }),
+  validateSearch: (s: Record<string, unknown>): { redirect?: string } => ({ ...(typeof s["redirect"] === "string" && s["redirect"].startsWith("/") && !s["redirect"].startsWith("//") && !s["redirect"].includes("\\") ? { redirect: s["redirect"] } : {}) }),
   head: () => ({ meta: [{ title: "Log in — AI Memory Trainer" }, { name: "description", content: "Log in to continue your study sessions." }, { property: "og:title", content: "Log in — AI Memory Trainer" }, { property: "og:description", content: "Log in to continue your study sessions." }] }),
   component: Login,
 });

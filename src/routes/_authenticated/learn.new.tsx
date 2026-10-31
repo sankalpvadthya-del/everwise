@@ -64,7 +64,7 @@ function NewTopic() {
       })
       .select("id")
       .single();
-    if (error) return toast.error(error.message);
+    if (error) { toast.error(error.message); return; }
     qc.invalidateQueries({ queryKey: ["topics"] });
     navigate({ to: "/learn/$topicId", params: { topicId: data.id }, search: { explain: true } });
   });

@@ -22,7 +22,7 @@ const TYPES = [
 ] as const;
 
 export const Route = createFileRoute("/_authenticated/learn/$topicId")({
-  validateSearch: (s: Record<string, unknown>) => ({ explain: s.explain === true || s.explain === "true" ? true : undefined }),
+  validateSearch: (s: Record<string, unknown>): { explain?: boolean } => ({ ...(s["explain"] === true || s["explain"] === "true" ? { explain: true } : {}) }),
   head: () => ({ meta: [{ title: "Topic — AI Memory Trainer" }] }),
   component: TopicPage,
 });
@@ -71,7 +71,7 @@ function TopicPage() {
   const meta = t.source_metadata as { file_name?: string } | null;
 
   const start = async () => {
-    if (!types.length) return toast.error("Choose at least one question type");
+    if (!types.length) { toast.error("Choose at least one question type"); return; }
     setGenerating(true);
     try {
       const r = await genFn({ data: { topicId, types, difficulty, count: Number(count) } });
@@ -84,7 +84,7 @@ function TopicPage() {
 
   const del = async () => {
     const { error } = await supabase.from("topics").delete().eq("id", topicId);
-    if (error) return toast.error(error.message);
+    if (error) { toast.error(error.message); return; }
     qc.invalidateQueries();
     toast.success("Topic deleted");
     navigate({ to: "/learn" });
