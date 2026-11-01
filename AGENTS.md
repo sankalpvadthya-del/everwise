@@ -14,3 +14,4 @@
 - Preserve the student's original answer; autocorrect may only forgive a single unambiguous spelling slip, never replace missing concepts or numerical values.
 - Exam-day quick recall uses diagnostic sessions from the saved question bank and hides feedback until results; it is revision practice, not a timed mock exam.
 - Finalize recall through the owner-scoped, row-locked database function; score, memory evidence, weak spots and scheduling commit together to prevent partial or duplicate completion.
+- Keep memory chart transformations in a pure presentation module and reuse the existing engine for fitted estimates; visualisation must not change scoring or scheduling.
