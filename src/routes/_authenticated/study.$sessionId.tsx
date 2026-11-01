@@ -1,3 +1,4 @@
+import { pageMeta } from "@/lib/page-meta";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
@@ -16,7 +17,7 @@ import {
 } from "@/components/ui/alert-dialog";
 
 export const Route = createFileRoute("/_authenticated/study/$sessionId")({
-  head: () => ({ meta: [{ title: "Study session — AI Memory Trainer" }] }),
+  head: () => pageMeta("Study session", "Answer recall questions and record your confidence."),
   component: Study,
 });
 

@@ -20,7 +20,7 @@ const schema = z
   .refine((v) => v.password === v.confirm, { path: ["confirm"], message: "Passwords don't match" });
 
 export const Route = createFileRoute("/signup")({
-  head: () => ({ meta: [{ title: "Create account — AI Memory Trainer" }, { name: "description", content: "Create a free account and start remembering what you learn." }, { property: "og:title", content: "Create account — AI Memory Trainer" }, { property: "og:description", content: "Create a free account and start remembering what you learn." }] }),
+  head: () => ({ meta: [{ title: "Create account — AI Memory Trainer" }, { name: "description", content: "Create a free account and start remembering what you learn." }, { property: "og:title", content: "Create account — AI Memory Trainer" }, { property: "og:description", content: "Create a free account and start remembering what you learn." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }),
   component: Signup,
 });
 

@@ -1,3 +1,4 @@
+import { pageMeta } from "@/lib/page-meta";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useQueryClient } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
@@ -23,7 +24,7 @@ const schema = z.object({
 });
 
 export const Route = createFileRoute("/_authenticated/learn/new")({
-  head: () => ({ meta: [{ title: "New topic — AI Memory Trainer" }, { name: "description", content: "Add a topic or upload study material." }] }),
+  head: () => pageMeta("New topic", "Add a topic or upload study material."),
   component: NewTopic,
 });
 

@@ -1,3 +1,4 @@
+import { pageMeta } from "@/lib/page-meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
@@ -10,7 +11,7 @@ import { Input } from "@/components/ui/input";
 import { StartRevisionButton } from "@/components/StartRevisionButton";
 
 export const Route = createFileRoute("/_authenticated/learn/")({
-  head: () => ({ meta: [{ title: "Topics — AI Memory Trainer" }, { name: "description", content: "All your study topics." }] }),
+  head: () => pageMeta("Topics", "All your study topics and active recall sessions."),
   component: Topics,
 });
 
