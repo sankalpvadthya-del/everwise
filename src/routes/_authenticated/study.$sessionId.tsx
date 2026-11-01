@@ -1,3 +1,4 @@
+import { pageMeta } from "@/lib/page-meta";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
@@ -16,7 +17,7 @@ import {
 } from "@/components/ui/alert-dialog";
 
 export const Route = createFileRoute("/_authenticated/study/$sessionId")({
-  head: () => ({ meta: [{ title: "Study session — AI Memory Trainer" }] }),
+  head: () => pageMeta("Study session", "Answer recall questions and record your confidence."),
   component: Study,
 });
 
@@ -50,12 +51,16 @@ function Study() {
   const [busy, setBusy] = useState(false);
   const [finishing, setFinishing] = useState(false);
   const [elapsed, setElapsed] = useState(0);
+  const [exam, setExam] = useState(false);
   const qStart = useRef(Date.now());
 
+  useEffect(() => { setExam(sessionStorage.getItem(`amt-exam-${sessionId}`) === "true"); }, [sessionId]);
+
   useEffect(() => {
-    if (data.data && idx === null) {
-      const first = data.data.qs.findIndex((q) => !data.data!.answered.has(q.id));
-      setIdx(first === -1 ? data.data.qs.length : first);
+    const loaded = data.data;
+    if (loaded && idx === null) {
+      const first = loaded.qs.findIndex((q) => !loaded.answered.has(q.id));
+      setIdx(first === -1 ? loaded.qs.length : first);
     }
   }, [data.data, idx]);
 
@@ -68,8 +73,8 @@ function Study() {
 
   const q = useMemo(() => (data.data && idx != null ? data.data.qs[idx] : null), [data.data, idx]);
 
-  if (data.isLoading || idx === null) return <Loading label="Loading session" />;
   if (data.error || !data.data) return <EmptyState title="Session not found" action={<Button asChild><Link to="/dashboard">Dashboard</Link></Button>} />;
+  if (data.isLoading || idx === null) return <Loading label="Loading session" />;
   const { s, qs } = data.data;
   const topic = s.topics as { id: string; title: string };
 
@@ -91,11 +96,11 @@ function Study() {
 
   const submit = async (skipped = false) => {
     if (!q) return;
-    if (!skipped && !answer.trim()) return toast.error("Write an answer, or skip");
+    if (!skipped && !answer.trim()) { toast.error("Write an answer, or skip"); return; }
     setBusy(true);
     try {
       const r = await evalFn({ data: { sessionId, questionId: q.id, answer: skipped ? "" : answer, confidence: skipped ? null : (conf as "very" | null), durationSeconds: Math.floor((Date.now() - qStart.current) / 1000), skipped } });
-      setResult(r);
+      if (exam) next(); else setResult(r);
     } catch (e) {
       toast.error(e instanceof Error ? e.message : "Couldn't submit answer");
     } finally {
@@ -114,6 +119,7 @@ function Study() {
 
   return (
     <div className="mx-auto max-w-2xl">
+      {exam && <div className="mb-4"><Pill tone="warning">Exam-Day recall</Pill></div>}
       <div className="mb-6 flex items-center justify-between">
         <Link to="/learn/$topicId" params={{ topicId: topic.id }} className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"><ChevronLeft className="size-4" /> {topic.title}</Link>
         <AlertDialog>
@@ -157,7 +163,7 @@ function Study() {
                     ))}
                   </div>
                 ) : (
-                  <Textarea rows={q.question_type === "fill_blank" ? 2 : 5} value={answer} onChange={(e) => setAnswer(e.target.value)} placeholder="Type your answer from memory…" aria-label="Your answer" />
+                  <Textarea rows={q.question_type === "fill_blank" ? 2 : 5} value={answer} spellCheck autoCorrect="on" onChange={(e) => setAnswer(e.target.value)} placeholder="Type your answer from memory…" aria-label="Your answer" />
                 )}
               </div>
               <div className="mt-6">

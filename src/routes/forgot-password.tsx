@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 export const Route = createFileRoute("/forgot-password")({
-  head: () => ({ meta: [{ title: "Reset password — AI Memory Trainer" }, { name: "description", content: "Get a link to reset your password." }, { property: "og:title", content: "Reset password — AI Memory Trainer" }, { property: "og:description", content: "Get a link to reset your password." }] }),
+  head: () => ({ meta: [{ title: "Reset password — AI Memory Trainer" }, { name: "description", content: "Get a link to reset your password." }, { property: "og:title", content: "Reset password — AI Memory Trainer" }, { property: "og:description", content: "Get a link to reset your password." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }),
   component: Forgot,
 });
 
@@ -16,7 +16,7 @@ function Forgot() {
   const [state, setState] = useState<"idle" | "busy" | "sent">("idle");
   const [err, setErr] = useState<string | null>(null);
   return (
-    <AuthLayout title="Forgot your password?" subtitle="We'll email you a reset link." footer={<Link to="/login" search={{ redirect: undefined }} className="hover:text-foreground">Back to log in</Link>}>
+    <AuthLayout title="Forgot your password?" subtitle="We'll email you a reset link." footer={<Link to="/login" search={{}} className="hover:text-foreground">Back to log in</Link>}>
       {state === "sent" ? (
         <p className="text-sm text-muted-foreground">If an account exists for <strong className="text-foreground">{email}</strong>, a reset link is on its way.</p>
       ) : (

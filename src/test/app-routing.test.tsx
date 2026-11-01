@@ -14,4 +14,12 @@ describe("App routing", () => {
 
     expect(matches.at(-1)?.routeId).not.toBe(rootRouteId);
   });
+  it.each(["dashboard", "memory-fingerprint", "forgetting-radar", "weak-spots", "revision-planner", "exam-mode", "history", "profile", "settings"])("resolves /%s to its dashboard page", (path) => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+    expect(router.matchRoutes(`/${path}`).at(-1)?.routeId).toBe(`/_authenticated/${path}`);
+  });
+  it("resolves the new-topic page before the dynamic topic route", () => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+    expect(router.matchRoutes("/learn/new").at(-1)?.routeId).toBe("/_authenticated/learn/new");
+  });
 });

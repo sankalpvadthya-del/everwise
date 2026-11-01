@@ -20,7 +20,7 @@ const schema = z
   .refine((v) => v.password === v.confirm, { path: ["confirm"], message: "Passwords don't match" });
 
 export const Route = createFileRoute("/signup")({
-  head: () => ({ meta: [{ title: "Create account — AI Memory Trainer" }, { name: "description", content: "Create a free account and start remembering what you learn." }, { property: "og:title", content: "Create account — AI Memory Trainer" }, { property: "og:description", content: "Create a free account and start remembering what you learn." }] }),
+  head: () => ({ meta: [{ title: "Create account — AI Memory Trainer" }, { name: "description", content: "Create a free account and start remembering what you learn." }, { property: "og:title", content: "Create account — AI Memory Trainer" }, { property: "og:description", content: "Create a free account and start remembering what you learn." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }),
   component: Signup,
 });
 
@@ -56,7 +56,7 @@ function Signup() {
     </div>
   );
   return (
-    <AuthLayout title="Create your account" subtitle="Start building your Memory Fingerprint." footer={<>Already have an account? <Link to="/login" search={{ redirect: undefined }} className="font-medium text-foreground hover:underline">Log in</Link></>}>
+    <AuthLayout title="Create your account" subtitle="Start building your Memory Fingerprint." footer={<>Already have an account? <Link to="/login" search={{}} className="font-medium text-foreground hover:underline">Log in</Link></>}>
       <form onSubmit={onSubmit} className="space-y-4" noValidate>
         {field("name", "Name", "text", "name")}
         {field("email", "Email", "email", "email")}

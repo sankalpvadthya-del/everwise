@@ -8,7 +8,7 @@ import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/reset-password")({
-  head: () => ({ meta: [{ title: "Set a new password — AI Memory Trainer" }, { name: "description", content: "Choose a new password for your account." }, { property: "og:title", content: "Set a new password — AI Memory Trainer" }, { property: "og:description", content: "Choose a new password for your account." }] }),
+  head: () => ({ meta: [{ title: "Set a new password — AI Memory Trainer" }, { name: "description", content: "Choose a new password for your account." }, { property: "og:title", content: "Set a new password — AI Memory Trainer" }, { property: "og:description", content: "Choose a new password for your account." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }),
   component: Reset,
 });
 

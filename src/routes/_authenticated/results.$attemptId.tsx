@@ -1,3 +1,4 @@
+import { pageMeta } from "@/lib/page-meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { format } from "date-fns";
@@ -14,7 +15,7 @@ import { startRevisionSession } from "@/lib/ai.functions";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/_authenticated/results/$attemptId")({
-  head: () => ({ meta: [{ title: "Results — AI Memory Trainer" }] }),
+  head: () => pageMeta("Results", "Review recall scores, feedback and your next revision."),
   component: Results,
 });
 

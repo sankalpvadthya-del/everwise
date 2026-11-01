@@ -13,7 +13,7 @@ const schema = z.object({ email: z.string().trim().email("Enter a valid email"),
 
 export const Route = createFileRoute("/login")({
   validateSearch: (s: Record<string, unknown>): { redirect?: string } => ({ ...(typeof s["redirect"] === "string" && s["redirect"].startsWith("/") && !s["redirect"].startsWith("//") && !s["redirect"].includes("\\") ? { redirect: s["redirect"] } : {}) }),
-  head: () => ({ meta: [{ title: "Log in — AI Memory Trainer" }, { name: "description", content: "Log in to continue your study sessions." }, { property: "og:title", content: "Log in — AI Memory Trainer" }, { property: "og:description", content: "Log in to continue your study sessions." }] }),
+  head: () => ({ meta: [{ title: "Log in — AI Memory Trainer" }, { name: "description", content: "Log in to continue your study sessions." }, { property: "og:title", content: "Log in — AI Memory Trainer" }, { property: "og:description", content: "Log in to continue your study sessions." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }),
   component: Login,
 });
 

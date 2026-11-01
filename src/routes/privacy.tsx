@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { LegalPage } from "@/components/LegalPage";
 
 export const Route = createFileRoute("/privacy")({
-  head: () => ({ meta: [{ title: "Privacy Policy — AI Memory Trainer" }, { name: "description", content: "How AI Memory Trainer handles your study data." }, { property: "og:title", content: "Privacy Policy — AI Memory Trainer" }, { property: "og:description", content: "How AI Memory Trainer handles your study data." }] }),
+  head: () => ({ meta: [{ title: "Privacy Policy — AI Memory Trainer" }, { name: "description", content: "How AI Memory Trainer handles your study data." }, { property: "og:title", content: "Privacy Policy — AI Memory Trainer" }, { property: "og:description", content: "How AI Memory Trainer handles your study data." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }),
   component: () => (
     <LegalPage title="Privacy Policy">
       <h2>What we store</h2>

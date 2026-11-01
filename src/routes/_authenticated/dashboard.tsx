@@ -1,3 +1,4 @@
+import { pageMeta } from "@/lib/page-meta";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
 import { BookOpen, Upload, Repeat, Stethoscope, Fingerprint, Activity, ShieldCheck, AlertTriangle, CheckCircle2, ArrowRight } from "lucide-react";
@@ -9,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { StartRevisionButton } from "@/components/StartRevisionButton";
 
 export const Route = createFileRoute("/_authenticated/dashboard")({
-  head: () => ({ meta: [{ title: "Dashboard — AI Memory Trainer" }, { name: "description", content: "Your learning overview." }] }),
+  head: () => pageMeta("Dashboard", "Your learning overview and recommended recall sessions."),
   component: Dashboard,
 });
 

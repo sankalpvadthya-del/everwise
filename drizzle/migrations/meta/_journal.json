@@ -8,6 +8,13 @@
       "when": 1793291310223,
       "tag": "0000_memory_trainer_schema",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793530817856,
+      "tag": "0001_atomic_recall_completion",
+      "breakpoints": true
     }
   ]
 }

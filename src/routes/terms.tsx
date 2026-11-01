@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { LegalPage } from "@/components/LegalPage";
 
 export const Route = createFileRoute("/terms")({
-  head: () => ({ meta: [{ title: "Terms of Service — AI Memory Trainer" }, { name: "description", content: "The terms for using AI Memory Trainer." }, { property: "og:title", content: "Terms of Service — AI Memory Trainer" }, { property: "og:description", content: "The terms for using AI Memory Trainer." }] }),
+  head: () => ({ meta: [{ title: "Terms of Service — AI Memory Trainer" }, { name: "description", content: "The terms for using AI Memory Trainer." }, { property: "og:title", content: "Terms of Service — AI Memory Trainer" }, { property: "og:description", content: "The terms for using AI Memory Trainer." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }),
   component: () => (
     <LegalPage title="Terms of Service">
       <h2>Using the service</h2>

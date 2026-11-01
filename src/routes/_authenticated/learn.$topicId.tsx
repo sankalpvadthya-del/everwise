@@ -1,3 +1,4 @@
+import { pageMeta } from "@/lib/page-meta";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
@@ -23,7 +24,7 @@ const TYPES = [
 
 export const Route = createFileRoute("/_authenticated/learn/$topicId")({
   validateSearch: (s: Record<string, unknown>): { explain?: boolean } => ({ ...(s["explain"] === true || s["explain"] === "true" ? { explain: true } : {}) }),
-  head: () => ({ meta: [{ title: "Topic — AI Memory Trainer" }] }),
+  head: () => pageMeta("Topic", "Review your study material and practise active recall."),
   component: TopicPage,
 });
 

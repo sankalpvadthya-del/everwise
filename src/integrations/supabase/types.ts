@@ -470,7 +470,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      finish_recall_session: { Args: { p_session_id: string }; Returns: string }
     }
     Enums: {
       [_ in never]: never
