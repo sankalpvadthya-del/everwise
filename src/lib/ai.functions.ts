@@ -236,81 +236,9 @@ export const completeSession = createServerFn({ method: "POST" })
   .middleware([requireSupabaseAuth])
   .inputValidator((d: { sessionId: string }) => z.object({ sessionId: z.string().uuid() }).parse(d))
   .handler(async ({ data, context }) => {
-    const sb = context.supabase;
-    const { data: s } = await sb.from("study_sessions").select("*, topics(created_at)").eq("id", data.sessionId).single();
-    if (!s) throw new Error("Session not found");
-    if (s.status === "completed") return { attemptId: s.id };
-    const { data: ans } = await sb.from("answers").select("evaluation_status, confidence_level, question_id, questions(concept_tag)").eq("session_id", s.id);
-    const statuses = (ans ?? []).map((a) => a.evaluation_status as EvalStatus);
-    if ((ans ?? []).length !== s.question_ids.length) throw new Error("Answer or skip every question before finishing");
-    const sc = scoreSession(statuses);
-    const now = new Date();
-    const duration = Math.round((+now - +new Date(s.started_at)) / 1000);
-    await sb.from("study_sessions").update({
-      status: "completed", completed_at: now.toISOString(), duration_seconds: duration, score: sc.points, maximum_score: sc.maxPoints,
-    }).eq("id", s.id);
-
-    const conf = { guessing: 0, somewhat: 0, very: 0, veryCorrect: 0 };
-    for (const a of ans ?? []) {
-      if (a.confidence_level === "guessing" || a.confidence_level === "somewhat" || a.confidence_level === "very") conf[a.confidence_level]++;
-      if (a.confidence_level === "very" && a.evaluation_status === "correct") conf.veryCorrect++;
-    }
-    const topicCreated = (s.topics as { created_at: string } | null)?.created_at ?? s.started_at;
-    if (sc.maxPoints > 0) {
-      await sb.from("memory_observations").insert({
-        user_id: context.userId, topic_id: s.topic_id, session_id: s.id, observed_at: now.toISOString(),
-        elapsed_time_since_study: Math.round((+now - +new Date(topicCreated)) / 1000),
-        recall_score: sc.percent, confidence_summary: { ...conf, engine: ENGINE_VERSION }, observation_type: s.session_type,
-      });
-    }
-
-    // Weak spots: concepts answered incorrectly/partially.
-    const misses = new Map<string, number>();
-    const hits = new Set<string>();
-    for (const a of ans ?? []) {
-      const tag = (a.questions as { concept_tag: string | null } | null)?.concept_tag ?? "General";
-      if (a.evaluation_status === "incorrect" || a.evaluation_status === "partial" || a.evaluation_status === "skipped") misses.set(tag, (misses.get(tag) ?? 0) + 1);
-      else if (a.evaluation_status === "correct") hits.add(tag);
-    }
-    for (const [tag, n] of misses) {
-      const { data: existing } = await sb.from("weak_spots").select("id, occurrence_count").eq("topic_id", s.topic_id).eq("concept_tag", tag).maybeSingle();
-      const category = conf.veryCorrect === 0 && conf.very > 0 ? "overconfidence" : "recurring_error";
-      if (existing) {
-        await sb.from("weak_spots").update({
-          occurrence_count: existing.occurrence_count + n, last_observed_at: now.toISOString(), status: "active", updated_at: now.toISOString(),
-          evidence_summary: `Missed ${existing.occurrence_count + n} time(s) across sessions; most recently ${now.toDateString()}.`,
-        }).eq("id", existing.id);
-      } else {
-        await sb.from("weak_spots").insert({
-          user_id: context.userId, topic_id: s.topic_id, concept_tag: tag, diagnostic_category: category, occurrence_count: n,
-          evidence_summary: `Missed ${n} question(s) in a ${s.session_type} session on ${now.toDateString()}.`,
-        });
-      }
-    }
-    for (const tag of hits) {
-      if (!misses.has(tag)) await sb.from("weak_spots").update({ status: "improving", updated_at: now.toISOString() }).eq("topic_id", s.topic_id).eq("concept_tag", tag).eq("status", "active");
-    }
-
-    // Close any pending revision tasks for this topic and record history.
-    const { data: pending } = await sb.from("revision_tasks").select("id").eq("topic_id", s.topic_id).eq("status", "pending").lte("planned_for", now.toISOString().slice(0, 10));
-    for (const p of pending ?? []) {
-      await sb.from("revision_tasks").update({ status: "completed", completed_at: now.toISOString(), session_id: s.id, updated_at: now.toISOString() }).eq("id", p.id);
-      await sb.from("revision_history").insert({ user_id: context.userId, topic_id: s.topic_id, revision_task_id: p.id, session_id: s.id, outcome_summary: `Scored ${sc.percent}%` });
-    }
-
-    // Schedule the next review using the spaced-repetition ladder.
-    const { data: obs } = await sb.from("memory_observations").select("recall_score").eq("topic_id", s.topic_id);
-    const priorSuccess = (obs ?? []).filter((o) => Number(o.recall_score) >= 70).length - (sc.percent >= 70 ? 1 : 0);
-    const ratio = statuses.length ? conf.veryCorrect / statuses.length : 0;
-    const days = nextIntervalDays(Math.max(0, priorSuccess), sc.percent, ratio);
-    const planned = new Date(+now + days * 86400000).toISOString().slice(0, 10);
-    const { data: future } = await sb.from("revision_tasks").select("id").eq("topic_id", s.topic_id).eq("status", "pending").eq("is_manual", false);
-    if (future?.length) await sb.from("revision_tasks").delete().in("id", future.map((f) => f.id));
-    await sb.from("revision_tasks").insert({
-      user_id: context.userId, topic_id: s.topic_id, planned_for: planned, planned_duration_minutes: Math.max(10, Math.min(30, statuses.length * 2)),
-      reason: sc.percent < 50 ? `Scored ${sc.percent}% — review again tomorrow.` : `Scored ${sc.percent}% — next spaced review in ${days} day(s).`,
-    });
-    return { attemptId: s.id };
+    const { data: attemptId, error } = await context.supabase.rpc("finish_recall_session", { p_session_id: data.sessionId });
+    if (error) throw new Error(error.message);
+    return { attemptId };
   });
 
 const DiagnosisSchema = z.object({
