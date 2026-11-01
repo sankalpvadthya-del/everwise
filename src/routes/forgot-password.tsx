@@ -16,7 +16,7 @@ function Forgot() {
   const [state, setState] = useState<"idle" | "busy" | "sent">("idle");
   const [err, setErr] = useState<string | null>(null);
   return (
-    <AuthLayout title="Forgot your password?" subtitle="We'll email you a reset link." footer={<Link to="/login" search={{ redirect: undefined }} className="hover:text-foreground">Back to log in</Link>}>
+    <AuthLayout title="Forgot your password?" subtitle="We'll email you a reset link." footer={<Link to="/login" search={{}} className="hover:text-foreground">Back to log in</Link>}>
       {state === "sent" ? (
         <p className="text-sm text-muted-foreground">If an account exists for <strong className="text-foreground">{email}</strong>, a reset link is on its way.</p>
       ) : (

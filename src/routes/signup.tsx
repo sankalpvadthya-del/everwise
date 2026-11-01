@@ -56,7 +56,7 @@ function Signup() {
     </div>
   );
   return (
-    <AuthLayout title="Create your account" subtitle="Start building your Memory Fingerprint." footer={<>Already have an account? <Link to="/login" search={{ redirect: undefined }} className="font-medium text-foreground hover:underline">Log in</Link></>}>
+    <AuthLayout title="Create your account" subtitle="Start building your Memory Fingerprint." footer={<>Already have an account? <Link to="/login" search={{}} className="font-medium text-foreground hover:underline">Log in</Link></>}>
       <form onSubmit={onSubmit} className="space-y-4" noValidate>
         {field("name", "Name", "text", "name")}
         {field("email", "Email", "email", "email")}

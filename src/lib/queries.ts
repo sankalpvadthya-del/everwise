@@ -15,7 +15,11 @@ export const topicsQ = () =>
   });
 
 export const topicQ = (id: string) =>
-  queryOptions({ queryKey: ["topic", id], queryFn: () => unwrap(supabase.from("topics").select("*").eq("id", id).single()) });
+  queryOptions({ queryKey: ["topic", id], queryFn: async () => {
+    const { data, error } = await supabase.from("topics").select("*").eq("id", id).single();
+    if (error) throw new Error(error.message);
+    return data;
+  } });
 
 export const sessionsQ = () =>
   queryOptions({
