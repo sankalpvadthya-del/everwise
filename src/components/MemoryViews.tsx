@@ -10,13 +10,15 @@ import { PageHeader, Loading, EmptyState, Stat, RadarPill, Pill, scoreTone } fro
 import { StartRevisionButton } from "@/components/StartRevisionButton";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { FingerprintCharts, TopicRadarChart } from "@/components/MemoryCharts";
 
 export function MemoryView({ radar = false }: { radar?: boolean }) {
   const topics = useQuery(topicsQ()); const obs = useQuery(observationsQ());
   const weak = useQuery(weakSpotsQ()); const answers = useQuery(answersQ());
+  const sessions = useQuery(sessionsQ());
   const [filter, setFilter] = useState("all");
-  if (topics.isLoading || obs.isLoading || weak.isLoading || answers.isLoading) return <Loading />;
-  const error = topics.error || obs.error || weak.error || answers.error;
+  if (topics.isLoading || obs.isLoading || weak.isLoading || answers.isLoading || sessions.isLoading) return <Loading />;
+  const error = topics.error || obs.error || weak.error || answers.error || sessions.error;
   if (error) return <EmptyState title="Couldn't load memory data" body={error.message} />;
   const insights = buildInsights(topics.data ?? [], obs.data ?? [], weak.data ?? []);
   const calibration = overallCalibration(answers.data ?? []);
@@ -28,6 +30,7 @@ export function MemoryView({ radar = false }: { radar?: boolean }) {
       <Stat label="Confidence accuracy" value={calibration === null ? "—" : `${calibration}%`} hint={calibration === null ? "Needs 5 rated answers" : "Based on recorded answers"} />
     </div>
     {radar && <div className="my-6 flex flex-wrap gap-2">{["all", "overdue", "recommended", "stable", "insufficient"].map(value => <Button key={value} variant={filter === value ? "default" : "outline"} size="sm" onClick={() => setFilter(value)} className="capitalize">{value}</Button>)}</div>}
+    {radar ? <TopicRadarChart insights={insights.filter(i => filter === "all" || i.status === filter)} /> : <FingerprintCharts topics={topics.data ?? []} observations={obs.data ?? []} sessions={sessions.data ?? []} answers={answers.data ?? []} />}
     <div className="mt-6 space-y-3">{insights.filter(i => filter === "all" || i.status === filter).map(i => <article key={i.topic.id} className="card-surface p-5">
       <div className="flex flex-wrap items-center justify-between gap-3"><Link to="/learn/$topicId" params={{ topicId: i.topic.id }} className="font-semibold hover:underline">{i.topic.title}</Link><RadarPill status={i.status} /></div>
       <p className="mt-2 text-sm text-muted-foreground">{i.reason}</p>
