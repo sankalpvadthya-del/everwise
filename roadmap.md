@@ -5,5 +5,5 @@
 - [x] Verify recall through results and dashboard updates; run tests and inspect build status.
 
 # Interactive memory visualisations
-- [ ] Add observation-based retention, completed-review timeline, confidence outcomes and topic radar charts.
-- [ ] Test presentation data mapping and verify historical, empty, light/dark and narrow-screen states.
+- [x] Add observation-based retention, completed-review timeline, confidence outcomes and topic radar charts.
+- [x] Test presentation data mapping and verify historical, empty, light/dark and narrow-screen states (empty-history browser responses simulated without changing stored data).
