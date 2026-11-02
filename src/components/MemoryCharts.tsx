@@ -47,7 +47,7 @@ export function FingerprintCharts({ topics, observations, sessions, answers }: {
   const hasTrend = retention.points.length >= 2 && new Set(retention.points.map(p => p.time)).size >= 2;
   return <div className="my-8 space-y-8">
     <div className="flex flex-wrap items-center justify-between gap-3"><h2 className="font-display text-lg font-semibold">Your recall evidence</h2>
-      <Select value={topicId || undefined} onValueChange={setSelected} disabled={!topics.length}><SelectTrigger className="w-full sm:w-72" aria-label="Chart topic"><SelectValue placeholder="No topics yet" /></SelectTrigger><SelectContent>{topics.map(t => <SelectItem value={t.id} key={t.id}>{t.title}</SelectItem>)}</SelectContent></Select>
+      <Select value={topicId} onValueChange={setSelected} disabled={!topics.length}><SelectTrigger className="w-full sm:w-72" aria-label="Chart topic"><SelectValue placeholder="No topics yet" /></SelectTrigger><SelectContent>{topics.map(t => <SelectItem value={t.id} key={t.id}>{t.title}</SelectItem>)}</SelectContent></Select>
     </div>
     <PlotSection title="Retention & forgetting curve" note="Recorded recall scores over time. Reviews can improve recall; this is not a direct measurement of forgetting.">
       {retention.points.length ? <>
