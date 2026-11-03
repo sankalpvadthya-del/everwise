@@ -11,6 +11,7 @@ import { LogoMark } from "./Logo";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { StudentOnboarding } from "./StudentOnboarding";
 
 const NAV = [
   { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
@@ -109,6 +110,7 @@ export function AppShell() {
           <Button asChild size="sm"><Link to="/learn/new"><Plus className="size-4" /> New topic</Link></Button>
         </header>
         <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6 lg:px-8">
+          <StudentOnboarding />
           <Outlet />
         </main>
       </div>

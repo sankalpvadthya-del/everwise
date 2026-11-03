@@ -33,7 +33,7 @@ function Signup() {
     const { data, error } = await supabase.auth.signUp({
       email: v.email,
       password: v.password,
-      options: { emailRedirectTo: `${window.location.origin}/dashboard`, data: { display_name: v.name } },
+      options: { emailRedirectTo: `${window.location.origin}/dashboard`, data: { display_name: v.name, onboarding_version: 1 } },
     });
     if (error) return setErr(error.message);
     if (data.session) window.location.href = "/dashboard";
