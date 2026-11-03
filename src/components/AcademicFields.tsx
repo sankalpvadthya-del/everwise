@@ -1,0 +1,24 @@
+import { useState } from "react";
+import { Plus, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { BOARDS, LANGUAGES, LEVELS, SUBJECTS, type StudentDraft } from "@/lib/student-profile";
+
+function Choice({ label, value, options, onChange }: { label: string; value: string; options: string[]; onChange: (value: string) => void }) {
+  const custom = !!value && !options.includes(value);
+  return <div className="space-y-2"><Label>{label}</Label><Select value={custom ? "Other" : value} onValueChange={onChange}><SelectTrigger aria-label={label}><SelectValue placeholder={`Choose ${label.toLowerCase()}`} /></SelectTrigger><SelectContent>{options.map(option => <SelectItem key={option} value={option}>{option}</SelectItem>)}</SelectContent></Select>{(custom || value === "Other") && <Input aria-label={`Custom ${label.toLowerCase()}`} placeholder={`Your ${label.toLowerCase()}`} maxLength={100} value={custom ? value : ""} onChange={e => onChange(e.target.value || "Other")} />}</div>;
+}
+export function AcademicFields({ draft, onChange, section = "all" }: { draft: StudentDraft; onChange: (draft: StudentDraft) => void; section?: "all" | "context" | "subjects" | "goal" }) {
+  const [custom, setCustom] = useState(""); const [subjectError, setSubjectError] = useState("");
+  const set = <K extends keyof StudentDraft>(key: K, value: StudentDraft[K]) => onChange({ ...draft, [key]: value });
+  const toggle = (name: string) => set("subjects", draft.subjects.includes(name) ? draft.subjects.filter(s => s !== name) : [...draft.subjects, name]);
+  const add = () => { const name = custom.trim(); if (!name) return setSubjectError("Enter a subject name"); if (draft.subjects.some(s => s.toLowerCase() === name.toLowerCase())) return setSubjectError("That subject is already selected"); set("subjects", [...draft.subjects, name]); setCustom(""); setSubjectError(""); };
+  return <div className="space-y-5">
+    {(section === "all" || section === "context") && <><div className="grid gap-5 sm:grid-cols-2"><Choice label="Academic level" value={draft.level} options={LEVELS} onChange={v => set("level", v)} /><Choice label="Education board" value={draft.board} options={BOARDS} onChange={v => set("board", v)} /></div><div className="space-y-2"><Label htmlFor="academic-year">Academic year</Label><Input id="academic-year" value={draft.year} onChange={e => set("year", e.target.value)} placeholder="e.g. 2026–2027" maxLength={40} /></div></>}
+    {(section === "all" || section === "subjects") && <><fieldset><legend className="mb-3 text-sm font-medium">Subjects</legend><div className="grid gap-3 sm:grid-cols-2">{SUBJECTS.map((name, index) => <label key={name} className="flex items-center gap-2 text-sm"><Checkbox id={`subject-${index}`} checked={draft.subjects.includes(name)} onCheckedChange={() => toggle(name)} />{name}</label>)}</div></fieldset><div className="space-y-2"><Label htmlFor="custom-subject">Custom subject</Label><div className="flex gap-2"><Input id="custom-subject" value={custom} maxLength={80} onChange={e => setCustom(e.target.value)} onKeyDown={e => { if (e.key === "Enter") { e.preventDefault(); add(); } }} /><Button type="button" variant="outline" size="icon" onClick={add} aria-label="Add custom subject" title="Add custom subject"><Plus className="size-4" /></Button></div>{subjectError && <p role="alert" className="text-sm text-destructive">{subjectError}</p>}</div><div className="flex flex-wrap gap-2">{draft.subjects.filter(s => !SUBJECTS.includes(s)).map(s => <span key={s} className="flex max-w-full items-center gap-1 rounded-md border pl-2 text-sm"><span className="break-words">{s}</span><Button type="button" variant="ghost" size="icon" className="size-7 shrink-0" aria-label={`Remove ${s}`} title={`Remove ${s}`} onClick={() => toggle(s)}><X className="size-3" /></Button></span>)}</div><Choice label="Second language" value={draft.language} options={LANGUAGES} onChange={v => set("language", v)} /></>}
+    {(section === "all" || section === "goal") && <div className="space-y-3"><Label htmlFor="daily-goal">Daily study goal (minutes)</Label><div className="flex flex-wrap gap-2">{[15, 30, 45, 60].map(minutes => <Button type="button" key={minutes} variant={draft.daily === minutes ? "default" : "outline"} aria-pressed={draft.daily === minutes} onClick={() => set("daily", minutes)}>{minutes} min</Button>)}</div><Input id="daily-goal" type="number" min={5} max={600} step={1} value={Number.isFinite(draft.daily) ? draft.daily : ""} onChange={e => set("daily", e.target.value === "" ? NaN : Number(e.target.value))} /></div>}
+  </div>;
+}
