@@ -1,4 +1,5 @@
 import { supabase } from "@/integrations/supabase/client";
+import type { Json } from "@/integrations/supabase/types";
 import { mergeAcademic, onboardingState, preferencesObject, studentSchema, type StudentDraft } from "./student-profile";
 
 export async function saveStudentProfile(draft: StudentDraft, options: { step?: number; complete?: boolean; account?: { name: string; goals: string; autocorrect: boolean } } = {}) {
@@ -11,7 +12,7 @@ export async function saveStudentProfile(draft: StudentDraft, options: { step?: 
     if (!result.success) throw new Error(result.error.issues[0]?.message ?? "Check your academic details");
     draft = result.data;
   }
-  const preferences = options.complete || options.account ? mergeAcademic(old?.preferences, draft) : preferencesObject(old?.preferences);
+  const preferences: Record<string, Json | undefined> = options.complete || options.account ? mergeAcademic(old?.preferences, draft) : preferencesObject(old?.preferences);
   const now = new Date().toISOString();
   if (options.step !== undefined || options.complete) {
     preferences["onboarding"] = { ...onboardingState(old?.preferences), version: 1, status: options.complete ? "completed" : "in_progress", step: options.step ?? 2, draft: { ...draft }, updatedAt: now, ...(options.complete ? { completedAt: now } : {}) };
