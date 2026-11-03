@@ -1,0 +1,13 @@
+import { describe, expect, it } from "vitest";
+import { academicDraft, dailyStudyProgress, mergeAcademic, needsOnboarding, resumeDraft, studentSchema } from "@/lib/student-profile";
+const draft = { level: "Class 10", board: "CBSE", year: "2026–2027", subjects: ["Mathematics", "Astronomy"], language: "Hindi", daily: 45 };
+describe("student onboarding and academic profile", () => {
+  it("never enrolls an unmarked existing student with empty preferences", () => { expect(needsOnboarding({}, false)).toBe(false); });
+  it("enrolls new signups but never repeats completed onboarding", () => { expect(needsOnboarding({}, true)).toBe(true); expect(needsOnboarding({ onboarding: { status: "completed" } }, true)).toBe(false); });
+  it("resumes incomplete onboarding and its stored subjects and goal", () => { const preferences = { onboarding: { status: "in_progress", step: 1, draft } }; expect(needsOnboarding(preferences, false)).toBe(true); expect(resumeDraft(preferences, academicDraft(null))).toEqual(draft); });
+  it("preserves autocorrect and onboarding while editing academic context", () => { expect(mergeAcademic({ autocorrect: false, onboarding: { status: "completed" }, academic: { extra: "kept" } }, draft)).toEqual({ autocorrect: false, onboarding: { status: "completed" }, academic: { extra: "kept", board: "CBSE", year: "2026–2027", language: "Hindi" } }); });
+  it("accepts all requested daily presets and a custom whole-minute goal", () => { for (const daily of [15, 30, 45, 60, 37]) expect(studentSchema.safeParse({ ...draft, daily }).success).toBe(true); });
+  it("rejects invalid goals and missing subjects", () => { for (const daily of [0, 601, 15.5, NaN]) expect(studentSchema.safeParse({ ...draft, daily }).success).toBe(false); expect(studentSchema.safeParse({ ...draft, subjects: [] }).success).toBe(false); });
+  it("loads canonical and preference fields without replacing custom subjects", () => { expect(academicDraft({ academic_level: draft.level, subjects: draft.subjects, daily_study_goal: 45, preferences: { academic: { board: draft.board, year: draft.year, language: draft.language } } })).toEqual(draft); });
+  it("counts only actual completed time today and caps goal progress", () => { const now = new Date(2026, 10, 3, 12); const started_at = new Date(2026, 10, 3, 10).toISOString(); const completed_at = new Date(2026, 10, 3, 11).toISOString(); const session = { status: "completed", started_at, completed_at, duration_seconds: 3600 }; expect(dailyStudyProgress([session, { ...session, status: "in_progress" }, { ...session, completed_at: new Date(2026, 10, 2, 11).toISOString() }], 30, now)).toEqual({ minutes: 60, percent: 100 }); expect(dailyStudyProgress([], 30, now)).toEqual({ minutes: 0, percent: 0 }); });
+});

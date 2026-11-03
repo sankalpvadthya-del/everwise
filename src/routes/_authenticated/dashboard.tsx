@@ -8,6 +8,7 @@ import { buildInsights } from "@/lib/fingerprint";
 import { PageHeader, Stat, EmptyState, Pill, scoreTone, RadarPill, Loading } from "@/components/ui-bits";
 import { Button } from "@/components/ui/button";
 import { StartRevisionButton } from "@/components/StartRevisionButton";
+import { StudentDashboard } from "@/components/StudentDashboard";
 
 export const Route = createFileRoute("/_authenticated/dashboard")({
   head: () => pageMeta("Dashboard", "Your learning overview and recommended recall sessions."),
@@ -37,6 +38,7 @@ function Dashboard() {
   return (
     <div>
       <PageHeader eyebrow={format(new Date(), "EEEE, d MMMM")} title={name ? `Welcome back, ${name}` : "Welcome back"} description="Here's what your Memory Fingerprint says today." />
+      <StudentDashboard />
 
       {t.length === 0 ? (
         <EmptyState
