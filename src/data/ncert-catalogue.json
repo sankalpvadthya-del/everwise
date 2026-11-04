@@ -1,0 +1,5313 @@
+{
+  "publisher": "NCERT",
+  "catalogueUrl": "https://ncert.nic.in/textbook.php",
+  "verifiedAt": "2026-11-04",
+  "books": [
+    {
+      "id": "fhml1",
+      "level": "Class 6",
+      "subject": "Hindi",
+      "title": "Malhar",
+      "chapterCount": 13
+    },
+    {
+      "id": "fekb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh",
+      "chapterCount": 6
+    },
+    {
+      "id": "fhkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Hindi)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fbnkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Bengali)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fbdkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Bodo)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fdgkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Dogri)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fkokb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Konkani)",
+      "chapterCount": 6
+    },
+    {
+      "id": "forkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Odia)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fpnkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Punjabi)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fmlkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Malayalam)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fknkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Kannada)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fmnkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Manipuri)",
+      "chapterCount": 6
+    },
+    {
+      "id": "ftmkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Tamil)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fgjkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Gujarati)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fmtkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Maithili)",
+      "chapterCount": 6
+    },
+    {
+      "id": "faskb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Assamese)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fnpkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Nepali)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fskkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Sanskrit)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fkskb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Kashmiri)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fmrkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Marathi)",
+      "chapterCount": 6
+    },
+    {
+      "id": "ftlkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Telugu)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fsnkb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Santhali)",
+      "chapterCount": 6
+    },
+    {
+      "id": "fsikb1",
+      "level": "Class 6",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Sindhi)",
+      "chapterCount": 6
+    },
+    {
+      "id": "feky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra",
+      "chapterCount": 5
+    },
+    {
+      "id": "fhky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Hindi)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fbnky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Bengali)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fpnky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Punjabi)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fasky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Assamese)",
+      "chapterCount": 5
+    },
+    {
+      "id": "ftmky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Tamil)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fnpky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Nepali)",
+      "chapterCount": 5
+    },
+    {
+      "id": "forky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Odia)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fdgky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Dogri)",
+      "chapterCount": 5
+    },
+    {
+      "id": "ftlky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Telugu)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fkoky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Konkani)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fknky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Kannada)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fmlky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Malayalam)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fbdky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Bodo)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fksky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Kashmiri)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fmnky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Manipuri)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fmrky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Marathi)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fskky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Sanskrit)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fsnky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Santhali)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fsiky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Sindhi)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fmtky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Maithili)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fgjky1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Gujarati)",
+      "chapterCount": 5
+    },
+    {
+      "id": "fukl1",
+      "level": "Class 6",
+      "subject": "Physical Education and Well Being",
+      "title": "Jismani Taleem aur Tandurusti",
+      "chapterCount": 5
+    },
+    {
+      "id": "fepr1",
+      "level": "Class 6",
+      "subject": "English",
+      "title": "Poorvi",
+      "chapterCount": 5
+    },
+    {
+      "id": "fegp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash",
+      "chapterCount": 10
+    },
+    {
+      "id": "fhgp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Hindi)",
+      "chapterCount": 10
+    },
+    {
+      "id": "forgp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Odia)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fbdgp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Bodo)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fmlgp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Malayalam)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fpngp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Punjabi)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fskgp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Sanskrit)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fkngp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Kannada)",
+      "chapterCount": 10
+    },
+    {
+      "id": "ftmgp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Tamil)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fmrgp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Marathi)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fbngp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Bengali)",
+      "chapterCount": 10
+    },
+    {
+      "id": "ftlgp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Telugu)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fmtgp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Maithili)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fdggp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Dogri)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fnpgp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Nepali)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fugp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Urdu)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fasgp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Assamese)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fgjgp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Gujarati)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fmngp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Manipuri)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fkogp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Konkani)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fsngp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Santhali)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fsigp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Sindhi)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fksgp1",
+      "level": "Class 6",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash (Kashmiri)",
+      "chapterCount": 10
+    },
+    {
+      "id": "fees1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond",
+      "chapterCount": 14
+    },
+    {
+      "id": "fhes1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Samaj Ka Aadhyan: Bharat or uske aage",
+      "chapterCount": 14
+    },
+    {
+      "id": "fknes1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Kannada)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fkses1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Kashmiri)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fores1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Odia)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fmnes1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Manipuri)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fmres1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Marathi)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fpnes1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Punjabi)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fdges1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Dogri)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fgjes1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Gujrati)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fmles1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Malayalam)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fskes1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Sanskrit)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fbnes1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Bengali)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fbdes1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Bodo)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fmtes1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Maithili)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fnpes1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Nepali)",
+      "chapterCount": 14
+    },
+    {
+      "id": "ftmes1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Tamil)",
+      "chapterCount": 14
+    },
+    {
+      "id": "ftles1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Telugu)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fues1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Muashre Ki Daryaft Hindustan aur Us Se Aage (Urdu)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fsnes1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Santhali)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fases1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Assamese)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fkoes1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Konkani)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fsies1",
+      "level": "Class 6",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond (Sindhi)",
+      "chapterCount": 14
+    },
+    {
+      "id": "fsde1",
+      "level": "Class 6",
+      "subject": "Sanskrit",
+      "title": "Deepakam",
+      "chapterCount": 16
+    },
+    {
+      "id": "fecu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity",
+      "chapterCount": 12
+    },
+    {
+      "id": "fhcu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Jigyasa",
+      "chapterCount": 12
+    },
+    {
+      "id": "fucu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Tajassus",
+      "chapterCount": 12
+    },
+    {
+      "id": "fmlcu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Malayalam)",
+      "chapterCount": 12
+    },
+    {
+      "id": "ftmcu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Tamil)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fkncu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Kannada)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fmtcu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Maithili)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fpncu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Punjabi)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fbncu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Bengali)",
+      "chapterCount": 12
+    },
+    {
+      "id": "forcu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Odia)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fkocu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Konkani)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fmncu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Manipuri)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fnpcu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Nepali)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fskcu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Sanskrit)",
+      "chapterCount": 12
+    },
+    {
+      "id": "ftlcu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Telugu)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fascu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Assamese)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fmrcu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Marathi)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fbdcu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Bodo)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fdgcu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Dogri)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fgjcu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Gujarati)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fsncu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Santhali)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fkscu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Kashmiri)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fsicu1",
+      "level": "Class 6",
+      "subject": "Science",
+      "title": "Curiosity (Sindhi)",
+      "chapterCount": 12
+    },
+    {
+      "id": "fekr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I",
+      "chapterCount": 22
+    },
+    {
+      "id": "fhkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Hindi)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fbnkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Bengali)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fkokr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Konkani)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fbdkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Bodo)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fmtkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Maithili)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fmnkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Manipuri)",
+      "chapterCount": 22
+    },
+    {
+      "id": "faskr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Assamese)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fdgkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Dogri)",
+      "chapterCount": 22
+    },
+    {
+      "id": "forkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Odia)",
+      "chapterCount": 22
+    },
+    {
+      "id": "ftmkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Tamil)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fgjkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Gujarati)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fknkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Kannada)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fmlkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Malayalam)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fmrkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Marathi)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fskkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Sanskrit)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fnpkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Nepali)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fpnkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Punjabi)",
+      "chapterCount": 22
+    },
+    {
+      "id": "ftlkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Telugu)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fkskr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Kashmiri)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fsikr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Sindhi)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fsnkr1",
+      "level": "Class 6",
+      "subject": "Arts",
+      "title": "Kriti-I (Santhali)",
+      "chapterCount": 22
+    },
+    {
+      "id": "fuky1",
+      "level": "Class 6",
+      "subject": "Urdu",
+      "title": "Khayal",
+      "chapterCount": 14
+    },
+    {
+      "id": "gegp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash",
+      "chapterCount": 8
+    },
+    {
+      "id": "gegp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II",
+      "chapterCount": 7
+    },
+    {
+      "id": "ghgp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Hindi)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gugp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Urdu)",
+      "chapterCount": 8
+    },
+    {
+      "id": "ghgp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Hindi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gbngp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Bengali)",
+      "chapterCount": 8
+    },
+    {
+      "id": "ggjgp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Gujarati)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gpngp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Punjabi)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gnpgp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Nepali)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gdggp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Dogri)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gtmgp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Tamil)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gtlgp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Telugu)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gmrgp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Marathi)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gkngp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Kannada)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gbdgp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Bodo)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gorgp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Odia)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gasgp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Assamese)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gkogp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Konkani)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gmngp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Manipuri)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gskgp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Sanskrit)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gsigp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Sindhi)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gksgp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Kashmiri)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gmtgp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Maithili)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gmlgp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash(Malayalam)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gsngp1",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Gujarati)",
+      "chapterCount": 8
+    },
+    {
+      "id": "ggjgp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Gujarati)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gkngp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Kannada)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gmrgp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Marathi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gorgp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Odia)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gpngp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Punjabi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gasgp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Assamese)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gbngp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Bengali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gtmgp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Tamil)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gmlgp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Malayalam)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gtlgp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Telugu)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gdggp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Dogri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gbdgp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Bodo)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gnpgp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Nepali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gsigp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Sindhi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gmngp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Manipuri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gmtgp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Maithili)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gkogp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Konkani)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gskgp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Sanskrit)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gsngp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Santhali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gksgp2",
+      "level": "Class 7",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash-II (Kashmiri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gekr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti",
+      "chapterCount": 20
+    },
+    {
+      "id": "ghkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Hindi)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gbnkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Bengali)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gpnkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Punjabi)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gskkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Sanskrit)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gknkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Kannada)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gorkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Odia)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gmrkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Marathi)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gdgkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Dogri)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gbdkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Bodo)",
+      "chapterCount": 20
+    },
+    {
+      "id": "ggjkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Gujarati)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gkokr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Konkani)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gaskr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Assamese)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gmtkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Maithili)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gsnkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Santhali)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gtmkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Tamil)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gnpkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Nepali)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gsikr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Sindhi)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gmnkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Manipuri)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gmlkr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Malayalam)",
+      "chapterCount": 20
+    },
+    {
+      "id": "gkskr1",
+      "level": "Class 7",
+      "subject": "Arts",
+      "title": "Kriti-I (Kashmiri)",
+      "chapterCount": 20
+    },
+    {
+      "id": "ghml1",
+      "level": "Class 7",
+      "subject": "Hindi",
+      "title": "Malhar",
+      "chapterCount": 10
+    },
+    {
+      "id": "gsde1",
+      "level": "Class 7",
+      "subject": "Sanskrit",
+      "title": "Deepakam",
+      "chapterCount": 15
+    },
+    {
+      "id": "gecu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity",
+      "chapterCount": 12
+    },
+    {
+      "id": "ghcu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Jigyasa",
+      "chapterCount": 12
+    },
+    {
+      "id": "gucu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Tajassus",
+      "chapterCount": 12
+    },
+    {
+      "id": "gmrcu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Marathi)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gorcu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Odia)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gbncu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Bengali)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gpncu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Punjabi)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gascu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Assamese)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gtmcu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Tamil)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gnpcu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Nepali)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gmncu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Manipuri)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gtlcu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Telugu)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gbdcu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Bodo)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gsncu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Santhali)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gkncu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Kannada)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gdgcu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Dogri)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gkocu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Konkani)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gkscu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Kashmiri)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gmlcu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Malayalam)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gmtcu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Maithili)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gskcu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Sanskrit)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gsicu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Sindhi)",
+      "chapterCount": 12
+    },
+    {
+      "id": "ggjcu1",
+      "level": "Class 7",
+      "subject": "Science",
+      "title": "Curiosity (Gujarati)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gepr1",
+      "level": "Class 7",
+      "subject": "English",
+      "title": "Poorvi",
+      "chapterCount": 5
+    },
+    {
+      "id": "gees1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I",
+      "chapterCount": 12
+    },
+    {
+      "id": "ghes1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Samaj Ka Aadhyan: Bharat or uske aage Part-I",
+      "chapterCount": 12
+    },
+    {
+      "id": "gees2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II",
+      "chapterCount": 8
+    },
+    {
+      "id": "ghes2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Samaj Ka Aadhyan: Bharat or uske aage Part-II",
+      "chapterCount": 8
+    },
+    {
+      "id": "gues1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Muashrey ki Daryaft - Hindustan aur Uske age Part-I",
+      "chapterCount": 12
+    },
+    {
+      "id": "gues2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Muashrey ki Daryaft - Hindustan aur Uske age Part-II",
+      "chapterCount": 8
+    },
+    {
+      "id": "gores1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Odia)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gmres1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Marathi)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gpnes1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Punjabi)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gkoes1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Konkani)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gmles1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Malayalam)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gknes1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Kannada)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gdges1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Dogri)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gmnes1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Manipuri)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gnpes1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Nepali)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gskes1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Sanskrit)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gmtes1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Maithili)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gases1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Assamese)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gbnes1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Bengali)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gbdes1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Bodo)",
+      "chapterCount": 12
+    },
+    {
+      "id": "ggjes1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Gujarati)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gtmes1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Tamil)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gsnes1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Santhali)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gsies1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Sindhi)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gtles1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Telugu)",
+      "chapterCount": 12
+    },
+    {
+      "id": "gkses1",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Kashmiri)",
+      "chapterCount": 12
+    },
+    {
+      "id": "ggjes2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Gujarati)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gknes2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Kannada)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gores2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Odia)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gpnes2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Punjabi)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gbnes2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Bengali)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gtmes2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Tamil)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gmles2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Malayalam)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gases2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Assamese)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gmres2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Marathi)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gtles2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Telugu)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gskes2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Sanskrit)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gkoes2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Konkani)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gmnes2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Manipuri)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gsies2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Sindhi)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gnpes2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Nepali)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gbdes2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Bodo)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gkses2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Kashmiri)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gsnes2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Santhali)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gdges2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Dogri)",
+      "chapterCount": 8
+    },
+    {
+      "id": "gmtes2",
+      "level": "Class 7",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II (Maithili)",
+      "chapterCount": 8
+    },
+    {
+      "id": "geky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra",
+      "chapterCount": 6
+    },
+    {
+      "id": "gukl1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Urdu)",
+      "chapterCount": 6
+    },
+    {
+      "id": "ghky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Hindi)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gpnky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Punjabi)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gdgky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Dogri)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gsnky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Santhali)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gmlky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Malayalam)",
+      "chapterCount": 6
+    },
+    {
+      "id": "ggjky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Gujarati)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gorky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Odia)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gbnky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Bengali)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gmrky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Marathi)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gkoky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Konkani)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gbdky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Bodo)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gskky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Sanskrit)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gknky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Kannada)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gtmky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Tamil)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gtlky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Telugu)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gmnky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Manipuri)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gnpky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Nepali)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gasky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Assamese)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gksky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Kashmiri)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gmtky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Maithili)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gsiky1",
+      "level": "Class 7",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Sindhi)",
+      "chapterCount": 6
+    },
+    {
+      "id": "gekb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh",
+      "chapterCount": 7
+    },
+    {
+      "id": "ghkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Hindi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gtlkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Telugu)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gorkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Odia)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gpnkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Punjabi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "ggjkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Gujarati)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gtmkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Tamil)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gdgkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Dogri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gknkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Kannada)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gnpkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Nepali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gskkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Sanskrit)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gmlkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Malayalam)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gkokb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Konkani)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gbnkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Bengali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gbdkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Bodo)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gkskb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Kashmiri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gmtkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Maithili)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gmrkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Marathi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gsnkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Santhali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gaskb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Assamese)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gmnkb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Manipuri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "gsikb1",
+      "level": "Class 7",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Sindhi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "guky1",
+      "level": "Class 7",
+      "subject": "Urdu",
+      "title": "Khayal",
+      "chapterCount": 14
+    },
+    {
+      "id": "hegp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I",
+      "chapterCount": 7
+    },
+    {
+      "id": "hegp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II",
+      "chapterCount": 7
+    },
+    {
+      "id": "hhgp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Hindi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hhgp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II (Hindi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hugp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Urdu)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hpngp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Punjabi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmtgp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Maithili)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmrgp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Marathi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hbngp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Bengali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hbdgp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Bodo)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hnpgp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Nepali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "horgp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Odia)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hkngp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Kannada)",
+      "chapterCount": 7
+    },
+    {
+      "id": "htlgp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Telugu)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hdggp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Dogri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hkogp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Konkani)",
+      "chapterCount": 7
+    },
+    {
+      "id": "htmgp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Tamil)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hksgp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Kashmiri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmngp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Manipuri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hskgp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Sanskrit)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hsngp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Santhali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmlgp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Malayalam)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hsigp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Sindhi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hasgp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Assamese)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hgjgp1",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-I (Gujarati)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hkngp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Kannada)",
+      "chapterCount": 7
+    },
+    {
+      "id": "horgp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Odia)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hpngp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Punjabi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hgjgp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Gujarati)",
+      "chapterCount": 7
+    },
+    {
+      "id": "htmgp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Tamil)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmlgp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Malayalam)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hasgp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Assamese)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmrgp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Marathi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "htlgp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Telugu)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hbngp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Bengali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hsngp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Santhali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hsigp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Sindhi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmngp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Manipuri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hbdgp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Bodo)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hdggp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Dogri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hskgp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Sanskrit)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hnpgp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Nepali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hkogp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Konkani)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hksgp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Kashmiri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmtgp2",
+      "level": "Class 8",
+      "subject": "Mathematics",
+      "title": "Ganita Prakash Part-II(Maithili)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hekr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti",
+      "chapterCount": 19
+    },
+    {
+      "id": "hhkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Hindi)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hukr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Urdu)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hmrkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Marathi)",
+      "chapterCount": 19
+    },
+    {
+      "id": "htmkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Tamil)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hpnkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Punjabi)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hnpkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Nepali)",
+      "chapterCount": 19
+    },
+    {
+      "id": "horkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Odia)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hdgkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Dogri)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hknkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Kannada)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hmlkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Malayalam)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hbdkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Bodo)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hbnkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Bengali)",
+      "chapterCount": 19
+    },
+    {
+      "id": "htlkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Telugu)",
+      "chapterCount": 19
+    },
+    {
+      "id": "haskr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Assamese)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hkskr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Kashmiri)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hskkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Sanskrit)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hgjkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Gujarati)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hkokr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Konkani)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hsnkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Santhali)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hmtkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Maithili)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hmnkr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Manipuri)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hsikr1",
+      "level": "Class 8",
+      "subject": "Arts",
+      "title": "Kriti (Sindhi)",
+      "chapterCount": 19
+    },
+    {
+      "id": "hhml1",
+      "level": "Class 8",
+      "subject": "Hindi",
+      "title": "Malhar",
+      "chapterCount": 10
+    },
+    {
+      "id": "hsde1",
+      "level": "Class 8",
+      "subject": "Sanskrit",
+      "title": "Deepakam",
+      "chapterCount": 16
+    },
+    {
+      "id": "hecu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity",
+      "chapterCount": 13
+    },
+    {
+      "id": "hhcu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Jigyasa",
+      "chapterCount": 13
+    },
+    {
+      "id": "hucu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Tajassus",
+      "chapterCount": 13
+    },
+    {
+      "id": "hpncu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Punjabi)",
+      "chapterCount": 13
+    },
+    {
+      "id": "htmcu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Tamil)",
+      "chapterCount": 13
+    },
+    {
+      "id": "horcu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Odia)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hascu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Assamese)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hmrcu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Marathi)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hbncu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Bengali)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hdgcu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Dogri)",
+      "chapterCount": 13
+    },
+    {
+      "id": "htlcu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Telugu)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hbdcu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Bodo)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hgjcu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Gujarati)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hmncu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Manipuri)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hskcu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Sanskrit)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hmlcu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Malayalam)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hkncu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Kannada)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hkocu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Konkani)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hmtcu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Maithili)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hnpcu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Nepali)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hsncu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Santhali)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hsicu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Sindhi)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hkscu1",
+      "level": "Class 8",
+      "subject": "Science",
+      "title": "Curiosity (Kashmiri)",
+      "chapterCount": 13
+    },
+    {
+      "id": "hepr1",
+      "level": "Class 8",
+      "subject": "English",
+      "title": "Poorvi",
+      "chapterCount": 5
+    },
+    {
+      "id": "hees1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I",
+      "chapterCount": 7
+    },
+    {
+      "id": "hhes1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Samaj Ka Aadhyan: Bharat or uske aage Part-I",
+      "chapterCount": 7
+    },
+    {
+      "id": "hues1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Muashrey ki Daryaft - Hindustan Aur Uske Age Part-I ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hees2",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-II",
+      "chapterCount": 8
+    },
+    {
+      "id": "hores1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Odia) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hskes1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Sanskrit) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmles1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Malayalam) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hpnes1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Punjabi) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hgjes1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Gujarati) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hbnes1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Bengali) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "htmes1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Tamil) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hnpes1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Nepali) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmnes1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Manipuri) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hknes1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Kannada) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmres1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Marathi) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hdges1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Dogri) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hases1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Assamese) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hkoes1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Konkani) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmtes1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Maithili) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hbdes1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Bodo) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hkses1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Kashmiri) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hsnes1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Santhali) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "htles1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Telugu) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "hsies1",
+      "level": "Class 8",
+      "subject": "Social Science",
+      "title": "Exploring Society India and Beyond Part-I (Sindhi) ",
+      "chapterCount": 7
+    },
+    {
+      "id": "heky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra",
+      "chapterCount": 6
+    },
+    {
+      "id": "hhky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra ( Hindi)",
+      "chapterCount": 6
+    },
+    {
+      "id": "huky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Urdu)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hpnky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Punjabi)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hmrky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Marathi)",
+      "chapterCount": 6
+    },
+    {
+      "id": "horky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Odia)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hmlky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Malayalam)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hgjky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Gujarati)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hskky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Sanskrit)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hnpky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Nepali)",
+      "chapterCount": 6
+    },
+    {
+      "id": "htmky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Tamil)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hbnky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Bengali)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hdgky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Dogri)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hbdky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Bodo)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hknky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Kannada)",
+      "chapterCount": 6
+    },
+    {
+      "id": "htlky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Telugu)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hmnky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Manipuri)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hmtky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Maithili)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hasky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Assamese)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hksky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Kashmiri)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hkoky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Konkani)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hsiky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Sindhi)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hsnky1",
+      "level": "Class 8",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Yatra (Santhali)",
+      "chapterCount": 6
+    },
+    {
+      "id": "hekb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh",
+      "chapterCount": 7
+    },
+    {
+      "id": "hhkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh (Hindi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hgjkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Gujarati)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hbdkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Bodo)",
+      "chapterCount": 7
+    },
+    {
+      "id": "horkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Odia)",
+      "chapterCount": 7
+    },
+    {
+      "id": "htlkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Telugu)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hskkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Sanskrit)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hpnkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Punjabi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hnpkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Nepali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmrkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Marathi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hknkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Kannada)",
+      "chapterCount": 7
+    },
+    {
+      "id": "htmkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Tamil)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hdgkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Dogri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hkokb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Konkani)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmtkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Maithili)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmlkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Malayalam)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hmnkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Manipuri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hsnkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Santhali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hbnkb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Bengali)",
+      "chapterCount": 7
+    },
+    {
+      "id": "haskb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Assamese)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hsikb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Sindhi)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hkskb1",
+      "level": "Class 8",
+      "subject": "Vocational Education",
+      "title": "Kaushal Bodh(Kashmiri)",
+      "chapterCount": 7
+    },
+    {
+      "id": "hukl1",
+      "level": "Class 8",
+      "subject": "Urdu",
+      "title": "Khayal",
+      "chapterCount": 21
+    },
+    {
+      "id": "iebe1",
+      "level": "Class 9",
+      "subject": "English",
+      "title": "Kaveri",
+      "chapterCount": 8
+    },
+    {
+      "id": "ihga1",
+      "level": "Class 9",
+      "subject": "Hindi",
+      "title": "Ganga",
+      "chapterCount": 12
+    },
+    {
+      "id": "ihsh1",
+      "level": "Class 9",
+      "subject": "Sanskrit",
+      "title": "Sharada",
+      "chapterCount": 16
+    },
+    {
+      "id": "isanskritr21",
+      "level": "Class 9",
+      "subject": "Sanskrit",
+      "title": "Risikulya(R2)",
+      "chapterCount": 10
+    },
+    {
+      "id": "iemh1",
+      "level": "Class 9",
+      "subject": "Mathematics",
+      "title": "Ganita Manjari",
+      "chapterCount": 8
+    },
+    {
+      "id": "iemh2",
+      "level": "Class 9",
+      "subject": "Mathematics",
+      "title": "Ganita Manjari PART-II",
+      "chapterCount": 6
+    },
+    {
+      "id": "ihmh1",
+      "level": "Class 9",
+      "subject": "Mathematics",
+      "title": "Ganita Manjari (Hindi)",
+      "chapterCount": 8
+    },
+    {
+      "id": "iumh1",
+      "level": "Class 9",
+      "subject": "Mathematics",
+      "title": "Ganit Manjari (Urdu)",
+      "chapterCount": 8
+    },
+    {
+      "id": "iesc1",
+      "level": "Class 9",
+      "subject": "Science",
+      "title": "Exploration",
+      "chapterCount": 13
+    },
+    {
+      "id": "ihsc1",
+      "level": "Class 9",
+      "subject": "Science",
+      "title": "Anveshan",
+      "chapterCount": 13
+    },
+    {
+      "id": "iuju1",
+      "level": "Class 9",
+      "subject": "Urdu",
+      "title": "Jamuna",
+      "chapterCount": 15
+    },
+    {
+      "id": "iest1",
+      "level": "Class 9",
+      "subject": "Social Science",
+      "title": "Understanding Society India and Beyond PART-I",
+      "chapterCount": 9
+    },
+    {
+      "id": "iest2",
+      "level": "Class 9",
+      "subject": "Social Science",
+      "title": "Understanding Society India and Beyond PART-II",
+      "chapterCount": 6
+    },
+    {
+      "id": "iehp1",
+      "level": "Class 9",
+      "subject": "Physical Education and Well Being",
+      "title": "Khel Praveen",
+      "chapterCount": 6
+    },
+    {
+      "id": "iekv1",
+      "level": "Class 9",
+      "subject": "Skill Education",
+      "title": "Kaushal Vikas",
+      "chapterCount": 12
+    },
+    {
+      "id": "ievc1",
+      "level": "Class 9",
+      "subject": "Vocational",
+      "title": "Cashier",
+      "chapterCount": 5
+    },
+    {
+      "id": "ieva1",
+      "level": "Class 9",
+      "subject": "Vocational",
+      "title": "Store Operations Assistant",
+      "chapterCount": 4
+    },
+    {
+      "id": "ievs1",
+      "level": "Class 9",
+      "subject": "Vocational",
+      "title": "Solanceous Crop Cultivator",
+      "chapterCount": 5
+    },
+    {
+      "id": "ievt1",
+      "level": "Class 9",
+      "subject": "Vocational",
+      "title": "Assistant Beauty Therapist",
+      "chapterCount": 3
+    },
+    {
+      "id": "ievw1",
+      "level": "Class 9",
+      "subject": "Vocational",
+      "title": "Animal Health Workers (Agriculture)",
+      "chapterCount": 4
+    },
+    {
+      "id": "ieve1",
+      "level": "Class 9",
+      "subject": "Vocational",
+      "title": "Hand Embroiderer (Addawala)",
+      "chapterCount": 5
+    },
+    {
+      "id": "ievh1",
+      "level": "Class 9",
+      "subject": "Vocational",
+      "title": "Hand Embroiderer",
+      "chapterCount": 5
+    },
+    {
+      "id": "iepg1",
+      "level": "Class 9",
+      "subject": "Vocational",
+      "title": "Plumber General",
+      "chapterCount": 5
+    },
+    {
+      "id": "ieeo1",
+      "level": "Class 9",
+      "subject": "Vocational",
+      "title": "IT Domestic Data Entry Operator",
+      "chapterCount": 5
+    },
+    {
+      "id": "iees1",
+      "level": "Class 9",
+      "subject": "Vocational",
+      "title": "Employability Skill",
+      "chapterCount": 5
+    },
+    {
+      "id": "iemr1",
+      "level": "Class 9",
+      "subject": "Arts",
+      "title": "Madhurima",
+      "chapterCount": 17
+    },
+    {
+      "id": "jemh1",
+      "level": "Class 10",
+      "subject": "Mathematics",
+      "title": "Mathematics",
+      "chapterCount": 14
+    },
+    {
+      "id": "jhmh1",
+      "level": "Class 10",
+      "subject": "Mathematics",
+      "title": "Ganit",
+      "chapterCount": 14
+    },
+    {
+      "id": "jumh1",
+      "level": "Class 10",
+      "subject": "Mathematics",
+      "title": "Riyazi",
+      "chapterCount": 15
+    },
+    {
+      "id": "jesc1",
+      "level": "Class 10",
+      "subject": "Science",
+      "title": "Science",
+      "chapterCount": 13
+    },
+    {
+      "id": "jhsc1",
+      "level": "Class 10",
+      "subject": "Science",
+      "title": "Vigyan",
+      "chapterCount": 13
+    },
+    {
+      "id": "jusc1",
+      "level": "Class 10",
+      "subject": "Science",
+      "title": "Science(Urdu)",
+      "chapterCount": 16
+    },
+    {
+      "id": "jhks1",
+      "level": "Class 10",
+      "subject": "Hindi",
+      "title": "Kshitij-2",
+      "chapterCount": 12
+    },
+    {
+      "id": "jhsp1",
+      "level": "Class 10",
+      "subject": "Hindi",
+      "title": "Sparsh",
+      "chapterCount": 14
+    },
+    {
+      "id": "jhsy1",
+      "level": "Class 10",
+      "subject": "Hindi",
+      "title": "Sanchayan Bhag-2",
+      "chapterCount": 3
+    },
+    {
+      "id": "jhkr1",
+      "level": "Class 10",
+      "subject": "Hindi",
+      "title": "Kritika",
+      "chapterCount": 3
+    },
+    {
+      "id": "jeff1",
+      "level": "Class 10",
+      "subject": "English",
+      "title": "First Flight",
+      "chapterCount": 9
+    },
+    {
+      "id": "jefp1",
+      "level": "Class 10",
+      "subject": "English",
+      "title": "Foot Prints Without feet Supp. Reader",
+      "chapterCount": 9
+    },
+    {
+      "id": "jewe2",
+      "level": "Class 10",
+      "subject": "English",
+      "title": "Words and Expressions  2",
+      "chapterCount": 9
+    },
+    {
+      "id": "jess1",
+      "level": "Class 10",
+      "subject": "Social Science",
+      "title": "Contemporary India ",
+      "chapterCount": 7
+    },
+    {
+      "id": "jhss1",
+      "level": "Class 10",
+      "subject": "Social Science",
+      "title": "Samkalin Bharat",
+      "chapterCount": 7
+    },
+    {
+      "id": "juss1",
+      "level": "Class 10",
+      "subject": "Social Science",
+      "title": "Aasri Hindustan-II",
+      "chapterCount": 7
+    },
+    {
+      "id": "jess2",
+      "level": "Class 10",
+      "subject": "Social Science",
+      "title": "Understanding Economic Development",
+      "chapterCount": 5
+    },
+    {
+      "id": "jhss2",
+      "level": "Class 10",
+      "subject": "Social Science",
+      "title": "Arthik Vikas ki Samajh",
+      "chapterCount": 5
+    },
+    {
+      "id": "juss2",
+      "level": "Class 10",
+      "subject": "Social Science",
+      "title": "Maashi Taraqqui Ki Samajh",
+      "chapterCount": 5
+    },
+    {
+      "id": "jess3",
+      "level": "Class 10",
+      "subject": "Social Science",
+      "title": "India and the Contemporary World-II ",
+      "chapterCount": 5
+    },
+    {
+      "id": "jhss3",
+      "level": "Class 10",
+      "subject": "Social Science",
+      "title": "Bharat Aur Samakalin Vishav-2",
+      "chapterCount": 5
+    },
+    {
+      "id": "juss3",
+      "level": "Class 10",
+      "subject": "Social Science",
+      "title": "Hindustan Aur Asri Duniya",
+      "chapterCount": 5
+    },
+    {
+      "id": "jess4",
+      "level": "Class 10",
+      "subject": "Social Science",
+      "title": "Democratic Politics",
+      "chapterCount": 5
+    },
+    {
+      "id": "jhss4",
+      "level": "Class 10",
+      "subject": "Social Science",
+      "title": "Loktantrik Rajniti",
+      "chapterCount": 5
+    },
+    {
+      "id": "juss4",
+      "level": "Class 10",
+      "subject": "Social Science",
+      "title": "Jamhuri Siyasat-II ",
+      "chapterCount": 8
+    },
+    {
+      "id": "jhsk1",
+      "level": "Class 10",
+      "subject": "Sanskrit",
+      "title": "Shemushi",
+      "chapterCount": 10
+    },
+    {
+      "id": "jhva1",
+      "level": "Class 10",
+      "subject": "Sanskrit",
+      "title": "Vyakaranavithi",
+      "chapterCount": 12
+    },
+    {
+      "id": "jsab1",
+      "level": "Class 10",
+      "subject": "Sanskrit",
+      "title": "Abhyaswaan Bhav-II",
+      "chapterCount": 14
+    },
+    {
+      "id": "juge1",
+      "level": "Class 10",
+      "subject": "Urdu",
+      "title": "Gulzar-e-Urdu",
+      "chapterCount": 12
+    },
+    {
+      "id": "june1",
+      "level": "Class 10",
+      "subject": "Urdu",
+      "title": "Nawa-e-Urdu",
+      "chapterCount": 14
+    },
+    {
+      "id": "jujp1",
+      "level": "Class 10",
+      "subject": "Urdu",
+      "title": "Jaan Pahechan",
+      "chapterCount": 22
+    },
+    {
+      "id": "judp1",
+      "level": "Class 10",
+      "subject": "Urdu",
+      "title": "Door-Paas",
+      "chapterCount": 19
+    },
+    {
+      "id": "jusr1",
+      "level": "Class 10",
+      "subject": "Urdu",
+      "title": "Sab Rang",
+      "chapterCount": 9
+    },
+    {
+      "id": "jehp1",
+      "level": "Class 10",
+      "subject": "Health and Physical Education",
+      "title": "Health and Physical Education",
+      "chapterCount": 13
+    },
+    {
+      "id": "khsk1",
+      "level": "Class 11",
+      "subject": "Sanskrit",
+      "title": "Bhaswati",
+      "chapterCount": 11
+    },
+    {
+      "id": "khsk2",
+      "level": "Class 11",
+      "subject": "Sanskrit",
+      "title": "Shashwati",
+      "chapterCount": 11
+    },
+    {
+      "id": "keac1",
+      "level": "Class 11",
+      "subject": "Accountancy",
+      "title": "Financial Accounting-I",
+      "chapterCount": 7
+    },
+    {
+      "id": "khac1",
+      "level": "Class 11",
+      "subject": "Accountancy",
+      "title": "Lekhashastra-I",
+      "chapterCount": 7
+    },
+    {
+      "id": "keac2",
+      "level": "Class 11",
+      "subject": "Accountancy",
+      "title": "Accountancy-II",
+      "chapterCount": 2
+    },
+    {
+      "id": "khac2",
+      "level": "Class 11",
+      "subject": "Accountancy",
+      "title": "Lekhashastra-II",
+      "chapterCount": 2
+    },
+    {
+      "id": "kuac1",
+      "level": "Class 11",
+      "subject": "Accountancy",
+      "title": "Khatadari-I(Urdu)",
+      "chapterCount": 8
+    },
+    {
+      "id": "kuac2",
+      "level": "Class 11",
+      "subject": "Accountancy",
+      "title": "Khatadari-II(Urdu)",
+      "chapterCount": 5
+    },
+    {
+      "id": "kebs1",
+      "level": "Class 11",
+      "subject": "Business Studies",
+      "title": "Business Studies",
+      "chapterCount": 11
+    },
+    {
+      "id": "khbs1",
+      "level": "Class 11",
+      "subject": "Business Studies",
+      "title": "Vyavsay Adhyanan",
+      "chapterCount": 11
+    },
+    {
+      "id": "kubs1",
+      "level": "Class 11",
+      "subject": "Business Studies",
+      "title": "Karobari Mutalah I",
+      "chapterCount": 11
+    },
+    {
+      "id": "kech1",
+      "level": "Class 11",
+      "subject": "Chemistry",
+      "title": "Chemistry Part-I",
+      "chapterCount": 6
+    },
+    {
+      "id": "khch1",
+      "level": "Class 11",
+      "subject": "Chemistry",
+      "title": "Rasayan Vigyan bhag-I",
+      "chapterCount": 6
+    },
+    {
+      "id": "kuch1",
+      "level": "Class 11",
+      "subject": "Chemistry",
+      "title": "Keemiya I",
+      "chapterCount": 7
+    },
+    {
+      "id": "kech2",
+      "level": "Class 11",
+      "subject": "Chemistry",
+      "title": "Chemistry Part II",
+      "chapterCount": 3
+    },
+    {
+      "id": "khch2",
+      "level": "Class 11",
+      "subject": "Chemistry",
+      "title": "Rasayan Vigyan bhag-II",
+      "chapterCount": 3
+    },
+    {
+      "id": "kuch2",
+      "level": "Class 11",
+      "subject": "Chemistry",
+      "title": "Keemiya II",
+      "chapterCount": 7
+    },
+    {
+      "id": "kemh1",
+      "level": "Class 11",
+      "subject": "Mathematics",
+      "title": "Mathematics",
+      "chapterCount": 14
+    },
+    {
+      "id": "khmh1",
+      "level": "Class 11",
+      "subject": "Mathematics",
+      "title": "Ganit",
+      "chapterCount": 14
+    },
+    {
+      "id": "kumh1",
+      "level": "Class 11",
+      "subject": "Mathematics",
+      "title": "Riyazi I",
+      "chapterCount": 16
+    },
+    {
+      "id": "kepc1",
+      "level": "Class 11",
+      "subject": "Vocational",
+      "title": "Floriculturist- Protected Cultivation",
+      "chapterCount": 5
+    },
+    {
+      "id": "kevt1",
+      "level": "Class 11",
+      "subject": "Vocational",
+      "title": "Vision Technician",
+      "chapterCount": 7
+    },
+    {
+      "id": "keoc1",
+      "level": "Class 11",
+      "subject": "Vocational",
+      "title": "Floriculturist",
+      "chapterCount": 6
+    },
+    {
+      "id": "keda1",
+      "level": "Class 11",
+      "subject": "Vocational",
+      "title": "General Duty Assistant",
+      "chapterCount": 5
+    },
+    {
+      "id": "kedf1",
+      "level": "Class 11",
+      "subject": "Vocational",
+      "title": "Dairy Farmer Enterpreneur",
+      "chapterCount": 4
+    },
+    {
+      "id": "kefc1",
+      "level": "Class 11",
+      "subject": "Vocational",
+      "title": "Floriculturist",
+      "chapterCount": 6
+    },
+    {
+      "id": "kebo1",
+      "level": "Class 11",
+      "subject": "Biology",
+      "title": "Biology",
+      "chapterCount": 19
+    },
+    {
+      "id": "khbo1",
+      "level": "Class 11",
+      "subject": "Biology",
+      "title": "Jeev Vigyan",
+      "chapterCount": 19
+    },
+    {
+      "id": "kubo1",
+      "level": "Class 11",
+      "subject": "Biology",
+      "title": "Hayatiyaat",
+      "chapterCount": 22
+    },
+    {
+      "id": "kehe1",
+      "level": "Class 11",
+      "subject": "Home Science",
+      "title": "Human Ecology and Family Sciences Part I ",
+      "chapterCount": 7
+    },
+    {
+      "id": "kehe2",
+      "level": "Class 11",
+      "subject": "Home Science",
+      "title": "Human Ecology and Family Sciences Part II ",
+      "chapterCount": 4
+    },
+    {
+      "id": "khhe1",
+      "level": "Class 11",
+      "subject": "Home Science",
+      "title": "Manav Paristhitiki evm pariwar vigyan Bhag-I ",
+      "chapterCount": 7
+    },
+    {
+      "id": "khhe2",
+      "level": "Class 11",
+      "subject": "Home Science",
+      "title": "Manav Paristhitiki evm pariwar vigyan Bhag-II ",
+      "chapterCount": 5
+    },
+    {
+      "id": "kuim1",
+      "level": "Class 11",
+      "subject": "Home Science",
+      "title": "Insani Mahauliyat aur Uloom e Khandandari-I ",
+      "chapterCount": 10
+    },
+    {
+      "id": "kuim2",
+      "level": "Class 11",
+      "subject": "Home Science",
+      "title": "Insani Mahauliyat aur Uloom e Khandandari Part-II ",
+      "chapterCount": 9
+    },
+    {
+      "id": "kepy1",
+      "level": "Class 11",
+      "subject": "Psychology",
+      "title": "Introduction to Psychology",
+      "chapterCount": 8
+    },
+    {
+      "id": "khpy1",
+      "level": "Class 11",
+      "subject": "Psychology",
+      "title": "Manovigyan",
+      "chapterCount": 8
+    },
+    {
+      "id": "kupy1",
+      "level": "Class 11",
+      "subject": "Psychology",
+      "title": "Nafsiyaat ",
+      "chapterCount": 9
+    },
+    {
+      "id": "keec1",
+      "level": "Class 11",
+      "subject": "Economics",
+      "title": "Indian Economic Development",
+      "chapterCount": 8
+    },
+    {
+      "id": "kest1",
+      "level": "Class 11",
+      "subject": "Economics",
+      "title": "Statistics for Economics",
+      "chapterCount": 8
+    },
+    {
+      "id": "khst1",
+      "level": "Class 11",
+      "subject": "Economics",
+      "title": "Sankhyiki",
+      "chapterCount": 8
+    },
+    {
+      "id": "khec1",
+      "level": "Class 11",
+      "subject": "Economics",
+      "title": "Bhartiya Airthryavstha Ka Vikas ",
+      "chapterCount": 8
+    },
+    {
+      "id": "kuec1",
+      "level": "Class 11",
+      "subject": "Economics",
+      "title": "Hindustan Ki Moaashi Tarraqqi(Urdu)",
+      "chapterCount": 10
+    },
+    {
+      "id": "kusc1",
+      "level": "Class 11",
+      "subject": "Economics",
+      "title": "Shumariyaat Bar-e-Mushiyat(Urdu)",
+      "chapterCount": 9
+    },
+    {
+      "id": "kegy2",
+      "level": "Class 11",
+      "subject": "Geography",
+      "title": "Fundamental of Physical Geography",
+      "chapterCount": 14
+    },
+    {
+      "id": "khgy2",
+      "level": "Class 11",
+      "subject": "Geography",
+      "title": "Bhautique Bhugol ke Mool Sidhant",
+      "chapterCount": 14
+    },
+    {
+      "id": "kugy1",
+      "level": "Class 11",
+      "subject": "Geography",
+      "title": "Hindustan Tabi'i Mahaul (Urdu)",
+      "chapterCount": 7
+    },
+    {
+      "id": "kegy3",
+      "level": "Class 11",
+      "subject": "Geography",
+      "title": "Pratical Work in Geography",
+      "chapterCount": 6
+    },
+    {
+      "id": "khgy3",
+      "level": "Class 11",
+      "subject": "Geography",
+      "title": "Bhugol Main Prayogatmak Karya",
+      "chapterCount": 6
+    },
+    {
+      "id": "kegy1",
+      "level": "Class 11",
+      "subject": "Geography",
+      "title": "India Physical Environment",
+      "chapterCount": 6
+    },
+    {
+      "id": "khgy1",
+      "level": "Class 11",
+      "subject": "Geography",
+      "title": "Bhart Bhautik Paryabaran",
+      "chapterCount": 6
+    },
+    {
+      "id": "kugy3",
+      "level": "Class 11",
+      "subject": "Geography",
+      "title": "Jughrafia Mein Aamli Kam (Urdu)",
+      "chapterCount": 8
+    },
+    {
+      "id": "kugm1",
+      "level": "Class 11",
+      "subject": "Geography",
+      "title": "Tabi'i Jughraiya Ka Mubadiyat (Urdu)",
+      "chapterCount": 16
+    },
+    {
+      "id": "keph1",
+      "level": "Class 11",
+      "subject": "Physics",
+      "title": "Physics Part-I",
+      "chapterCount": 7
+    },
+    {
+      "id": "khph1",
+      "level": "Class 11",
+      "subject": "Physics",
+      "title": "Bhautiki-I",
+      "chapterCount": 7
+    },
+    {
+      "id": "kuph1",
+      "level": "Class 11",
+      "subject": "Physics",
+      "title": "Tabiyaat-I",
+      "chapterCount": 8
+    },
+    {
+      "id": "keph2",
+      "level": "Class 11",
+      "subject": "Physics",
+      "title": "Physics Part-II",
+      "chapterCount": 7
+    },
+    {
+      "id": "khph2",
+      "level": "Class 11",
+      "subject": "Physics",
+      "title": "Bhautiki-II",
+      "chapterCount": 7
+    },
+    {
+      "id": "kuph2",
+      "level": "Class 11",
+      "subject": "Physics",
+      "title": "Tabiyaat-II",
+      "chapterCount": 7
+    },
+    {
+      "id": "khat1",
+      "level": "Class 11",
+      "subject": "Hindi",
+      "title": "Antra",
+      "chapterCount": 16
+    },
+    {
+      "id": "khar1",
+      "level": "Class 11",
+      "subject": "Hindi",
+      "title": "Aroh",
+      "chapterCount": 16
+    },
+    {
+      "id": "khvt1",
+      "level": "Class 11",
+      "subject": "Hindi",
+      "title": "Vitan",
+      "chapterCount": 5
+    },
+    {
+      "id": "khan1",
+      "level": "Class 11",
+      "subject": "Hindi",
+      "title": "Antral",
+      "chapterCount": 2
+    },
+    {
+      "id": "kesy1",
+      "level": "Class 11",
+      "subject": "Sociology",
+      "title": "Introducing Sociology",
+      "chapterCount": 5
+    },
+    {
+      "id": "khsy1",
+      "level": "Class 11",
+      "subject": "Sociology",
+      "title": "Samaj Shastra Parichay-I",
+      "chapterCount": 5
+    },
+    {
+      "id": "kusy1",
+      "level": "Class 11",
+      "subject": "Sociology",
+      "title": "Samajiyaat Ka Tarf",
+      "chapterCount": 5
+    },
+    {
+      "id": "kesy2",
+      "level": "Class 11",
+      "subject": "Sociology",
+      "title": "Understanding Society",
+      "chapterCount": 5
+    },
+    {
+      "id": "khsy2",
+      "level": "Class 11",
+      "subject": "Sociology",
+      "title": "Samaj ka Bodh",
+      "chapterCount": 5
+    },
+    {
+      "id": "kusy2",
+      "level": "Class 11",
+      "subject": "Sociology",
+      "title": "Mutala-e-Muashira",
+      "chapterCount": 5
+    },
+    {
+      "id": "keww1",
+      "level": "Class 11",
+      "subject": "English",
+      "title": "Woven Words",
+      "chapterCount": 27
+    },
+    {
+      "id": "kehb1",
+      "level": "Class 11",
+      "subject": "English",
+      "title": "Hornbill",
+      "chapterCount": 14
+    },
+    {
+      "id": "kesp1",
+      "level": "Class 11",
+      "subject": "English",
+      "title": "Snapshots Suppl.Reader English",
+      "chapterCount": 5
+    },
+    {
+      "id": "keps1",
+      "level": "Class 11",
+      "subject": "Political Science",
+      "title": "Political Theory",
+      "chapterCount": 8
+    },
+    {
+      "id": "khps1",
+      "level": "Class 11",
+      "subject": "Political Science",
+      "title": "Raajneeti Sidhant",
+      "chapterCount": 8
+    },
+    {
+      "id": "kups1",
+      "level": "Class 11",
+      "subject": "Political Science",
+      "title": "Hindustani Aain aur Kaam",
+      "chapterCount": 10
+    },
+    {
+      "id": "keps2",
+      "level": "Class 11",
+      "subject": "Political Science",
+      "title": "India Constitution at Work",
+      "chapterCount": 10
+    },
+    {
+      "id": "khps2",
+      "level": "Class 11",
+      "subject": "Political Science",
+      "title": "Bharat ka Samvidhan Sidhant aur Vyavhar",
+      "chapterCount": 10
+    },
+    {
+      "id": "kups2",
+      "level": "Class 11",
+      "subject": "Political Science",
+      "title": "Siyasi Nazaria",
+      "chapterCount": 10
+    },
+    {
+      "id": "kehs1",
+      "level": "Class 11",
+      "subject": "History",
+      "title": "Themes in World History",
+      "chapterCount": 7
+    },
+    {
+      "id": "khhs1",
+      "level": "Class 11",
+      "subject": "History",
+      "title": "Vishwa Itihas Ke Kuch Vishay",
+      "chapterCount": 7
+    },
+    {
+      "id": "kuta1",
+      "level": "Class 11",
+      "subject": "History",
+      "title": "Tareekh-e-Alam per Mabni Mauzuaat Part I",
+      "chapterCount": 11
+    },
+    {
+      "id": "kehc1",
+      "level": "Class 11",
+      "subject": "Heritage Crafts",
+      "title": "Living Craft Traditions of India",
+      "chapterCount": 10
+    },
+    {
+      "id": "kuhc1",
+      "level": "Class 11",
+      "subject": "Heritage Crafts",
+      "title": "Hindustan me Dastkari Ki Riwayat",
+      "chapterCount": 10
+    },
+    {
+      "id": "kegd1",
+      "level": "Class 11",
+      "subject": "Graphics design",
+      "title": "The story of graphic design",
+      "chapterCount": 8
+    },
+    {
+      "id": "khgd1",
+      "level": "Class 11",
+      "subject": "Graphics design",
+      "title": "graphic design ek kahani",
+      "chapterCount": 8
+    },
+    {
+      "id": "kect1",
+      "level": "Class 11",
+      "subject": "Computers and Communication Technology",
+      "title": "CCT Part-I",
+      "chapterCount": 8
+    },
+    {
+      "id": "kect2",
+      "level": "Class 11",
+      "subject": "Computers and Communication Technology",
+      "title": "CCT Part-II",
+      "chapterCount": 6
+    },
+    {
+      "id": "khct1",
+      "level": "Class 11",
+      "subject": "Computers and Communication Technology",
+      "title": "Computer aur Sanchar Prodhogiki Part-I",
+      "chapterCount": 8
+    },
+    {
+      "id": "khct2",
+      "level": "Class 11",
+      "subject": "Computers and Communication Technology",
+      "title": "Computer aur Sanchar Prodhogiki Part-II",
+      "chapterCount": 6
+    },
+    {
+      "id": "kuct1",
+      "level": "Class 11",
+      "subject": "Computers and Communication Technology",
+      "title": "Computer Aur Muwaslati Technology I",
+      "chapterCount": 8
+    },
+    {
+      "id": "kuct2",
+      "level": "Class 11",
+      "subject": "Computers and Communication Technology",
+      "title": "Computer Aur Muwaslati Technology II",
+      "chapterCount": 6
+    },
+    {
+      "id": "kefa1",
+      "level": "Class 11",
+      "subject": "Fine Art",
+      "title": "An Introduction to Indian Art Part-I",
+      "chapterCount": 8
+    },
+    {
+      "id": "khfa1",
+      "level": "Class 11",
+      "subject": "Fine Art",
+      "title": "Bhartiya Kala ka parichay",
+      "chapterCount": 8
+    },
+    {
+      "id": "kuna1",
+      "level": "Class 11",
+      "subject": "Urdu",
+      "title": "Nai Awaz",
+      "chapterCount": 20
+    },
+    {
+      "id": "kudh1",
+      "level": "Class 11",
+      "subject": "Urdu",
+      "title": "Dhanak",
+      "chapterCount": 27
+    },
+    {
+      "id": "kuga1",
+      "level": "Class 11",
+      "subject": "Urdu",
+      "title": "Gulistan e Adab",
+      "chapterCount": 22
+    },
+    {
+      "id": "kuku1",
+      "level": "Class 11",
+      "subject": "Urdu",
+      "title": "Khyabane Urdu",
+      "chapterCount": 15
+    },
+    {
+      "id": "khsr1",
+      "level": "Class 11",
+      "subject": "Creative Writing and Translation",
+      "title": "Srijan",
+      "chapterCount": 4
+    },
+    {
+      "id": "kucw1",
+      "level": "Class 11",
+      "subject": "Creative Writing and Translation",
+      "title": "Takhleequi Jauhar",
+      "chapterCount": 4
+    },
+    {
+      "id": "keip1",
+      "level": "Class 11",
+      "subject": "Informatics Practices",
+      "title": "Informatics Practices",
+      "chapterCount": 8
+    },
+    {
+      "id": "kebt1",
+      "level": "Class 11",
+      "subject": "Biotechnology",
+      "title": "Biotechnology",
+      "chapterCount": 12
+    },
+    {
+      "id": "kecs1",
+      "level": "Class 11",
+      "subject": "Computer Science",
+      "title": "Computer Science",
+      "chapterCount": 11
+    },
+    {
+      "id": "kucs1",
+      "level": "Class 11",
+      "subject": "Computer Science",
+      "title": "Computer Science - Urdu",
+      "chapterCount": 11
+    },
+    {
+      "id": "kehp1",
+      "level": "Class 11",
+      "subject": "Health and Physical Education",
+      "title": "Health and Physical Education",
+      "chapterCount": 11
+    },
+    {
+      "id": "keks1",
+      "level": "Class 11",
+      "subject": "Knowledge Traditions Practices of India",
+      "title": "Knowledge Traditions Practices of India",
+      "chapterCount": 9
+    },
+    {
+      "id": "khtp1",
+      "level": "Class 11",
+      "subject": "Sangeet",
+      "title": "Tabla evam Pakhawaj",
+      "chapterCount": 8
+    },
+    {
+      "id": "khgv1",
+      "level": "Class 11",
+      "subject": "Sangeet",
+      "title": "Hindustani Sangeet Gayan Evam Vadan",
+      "chapterCount": 10
+    },
+    {
+      "id": "leac1",
+      "level": "Class 12",
+      "subject": "Accountancy",
+      "title": "Accountancy-I",
+      "chapterCount": 4
+    },
+    {
+      "id": "leac2",
+      "level": "Class 12",
+      "subject": "Accountancy",
+      "title": "Accountancy Part-II",
+      "chapterCount": 6
+    },
+    {
+      "id": "lhac1",
+      "level": "Class 12",
+      "subject": "Accountancy",
+      "title": "Lekhashastra Part-I",
+      "chapterCount": 4
+    },
+    {
+      "id": "lhac2",
+      "level": "Class 12",
+      "subject": "Accountancy",
+      "title": "Lekhashastra Part-II",
+      "chapterCount": 5
+    },
+    {
+      "id": "leca1",
+      "level": "Class 12",
+      "subject": "Accountancy",
+      "title": "Computerised Accounting System",
+      "chapterCount": 4
+    },
+    {
+      "id": "luac1",
+      "level": "Class 12",
+      "subject": "Accountancy",
+      "title": "Khatadari-I(Urdu)",
+      "chapterCount": 5
+    },
+    {
+      "id": "luac2",
+      "level": "Class 12",
+      "subject": "Accountancy",
+      "title": "Khatadari-II(Urdu)",
+      "chapterCount": 6
+    },
+    {
+      "id": "lemh1",
+      "level": "Class 12",
+      "subject": "Mathematics",
+      "title": "Mathematics Part-I",
+      "chapterCount": 6
+    },
+    {
+      "id": "lemh2",
+      "level": "Class 12",
+      "subject": "Mathematics",
+      "title": "Mathematics Part-II",
+      "chapterCount": 7
+    },
+    {
+      "id": "lhmh1",
+      "level": "Class 12",
+      "subject": "Mathematics",
+      "title": "Ganit-I",
+      "chapterCount": 6
+    },
+    {
+      "id": "lhmh2",
+      "level": "Class 12",
+      "subject": "Mathematics",
+      "title": "Ganit-II",
+      "chapterCount": 7
+    },
+    {
+      "id": "lumh1",
+      "level": "Class 12",
+      "subject": "Mathematics",
+      "title": "Riyazi-I",
+      "chapterCount": 6
+    },
+    {
+      "id": "lumh2",
+      "level": "Class 12",
+      "subject": "Mathematics",
+      "title": "Riyazi-II",
+      "chapterCount": 7
+    },
+    {
+      "id": "leph1",
+      "level": "Class 12",
+      "subject": "Physics",
+      "title": "Physics Part-I",
+      "chapterCount": 8
+    },
+    {
+      "id": "leph2",
+      "level": "Class 12",
+      "subject": "Physics",
+      "title": "Physics Part-II",
+      "chapterCount": 6
+    },
+    {
+      "id": "lhph1",
+      "level": "Class 12",
+      "subject": "Physics",
+      "title": "Bhautiki-I",
+      "chapterCount": 8
+    },
+    {
+      "id": "lhph2",
+      "level": "Class 12",
+      "subject": "Physics",
+      "title": "Bhautiki-II",
+      "chapterCount": 6
+    },
+    {
+      "id": "luph1",
+      "level": "Class 12",
+      "subject": "Physics",
+      "title": "Tabiyaat-I",
+      "chapterCount": 8
+    },
+    {
+      "id": "luph2",
+      "level": "Class 12",
+      "subject": "Physics",
+      "title": "Tabiyaat-II",
+      "chapterCount": 6
+    },
+    {
+      "id": "lhat1",
+      "level": "Class 12",
+      "subject": "Hindi",
+      "title": "Antra",
+      "chapterCount": 21
+    },
+    {
+      "id": "lhar1",
+      "level": "Class 12",
+      "subject": "Hindi",
+      "title": "Aroh",
+      "chapterCount": 15
+    },
+    {
+      "id": "lhvt1",
+      "level": "Class 12",
+      "subject": "Hindi",
+      "title": "Vitan",
+      "chapterCount": 3
+    },
+    {
+      "id": "lhan1",
+      "level": "Class 12",
+      "subject": "Hindi",
+      "title": "Antral Bhag 2",
+      "chapterCount": 3
+    },
+    {
+      "id": "lekl1",
+      "level": "Class 12",
+      "subject": "English",
+      "title": "Kaliedoscope",
+      "chapterCount": 21
+    },
+    {
+      "id": "lefl1",
+      "level": "Class 12",
+      "subject": "English",
+      "title": "Flamingo",
+      "chapterCount": 13
+    },
+    {
+      "id": "levt1",
+      "level": "Class 12",
+      "subject": "English",
+      "title": "Vistas",
+      "chapterCount": 6
+    },
+    {
+      "id": "lebt1",
+      "level": "Class 12",
+      "subject": "Biotechnology",
+      "title": "Biotechnology",
+      "chapterCount": 13
+    },
+    {
+      "id": "lebo1",
+      "level": "Class 12",
+      "subject": "Biology",
+      "title": "Biology",
+      "chapterCount": 13
+    },
+    {
+      "id": "lhbo1",
+      "level": "Class 12",
+      "subject": "Biology",
+      "title": "Jeev Vigyan",
+      "chapterCount": 13
+    },
+    {
+      "id": "lubo1",
+      "level": "Class 12",
+      "subject": "Biology",
+      "title": "Hayatiyaat",
+      "chapterCount": 16
+    },
+    {
+      "id": "lehs1",
+      "level": "Class 12",
+      "subject": "History",
+      "title": "Themes in Indian History-I",
+      "chapterCount": 4
+    },
+    {
+      "id": "lhhs1",
+      "level": "Class 12",
+      "subject": "History",
+      "title": "Bharatiya Itihas ke kuchh Vishay-I",
+      "chapterCount": 4
+    },
+    {
+      "id": "lehs2",
+      "level": "Class 12",
+      "subject": "History",
+      "title": "Themes in Indian History-II",
+      "chapterCount": 4
+    },
+    {
+      "id": "lhhs2",
+      "level": "Class 12",
+      "subject": "History",
+      "title": "Bharatiya Itihas ke kuchh Vishay-II ",
+      "chapterCount": 4
+    },
+    {
+      "id": "lehs3",
+      "level": "Class 12",
+      "subject": "History",
+      "title": "Themes in Indian History-III",
+      "chapterCount": 4
+    },
+    {
+      "id": "lhhs3",
+      "level": "Class 12",
+      "subject": "History",
+      "title": "Bharatiya Itihas ke kuchh Vishay-III",
+      "chapterCount": 4
+    },
+    {
+      "id": "luth1",
+      "level": "Class 12",
+      "subject": "History",
+      "title": "Tareekh-e-Hind ke Mauzuaat-I(Urdu)",
+      "chapterCount": 4
+    },
+    {
+      "id": "luth2",
+      "level": "Class 12",
+      "subject": "History",
+      "title": "Tareekh-e-Hind ke Mauzuaat-II(Urdu)",
+      "chapterCount": 4
+    },
+    {
+      "id": "luth3",
+      "level": "Class 12",
+      "subject": "History",
+      "title": "Tareekh-e-Hind ke Mauzuaat-III(Urdu)",
+      "chapterCount": 4
+    },
+    {
+      "id": "legy1",
+      "level": "Class 12",
+      "subject": "Geography",
+      "title": "Fundamentals of Human Geography",
+      "chapterCount": 8
+    },
+    {
+      "id": "legy3",
+      "level": "Class 12",
+      "subject": "Geography",
+      "title": "Practical Work in Geography Part II",
+      "chapterCount": 4
+    },
+    {
+      "id": "lhgy1",
+      "level": "Class 12",
+      "subject": "Geography",
+      "title": "Manav Bhugol Ke Mool Sidhant",
+      "chapterCount": 8
+    },
+    {
+      "id": "lhgy3",
+      "level": "Class 12",
+      "subject": "Geography",
+      "title": "Bhugol main peryojnatmak pryogatmak karye",
+      "chapterCount": 4
+    },
+    {
+      "id": "legy2",
+      "level": "Class 12",
+      "subject": "Geography",
+      "title": "India -People And Economy",
+      "chapterCount": 9
+    },
+    {
+      "id": "lhgy2",
+      "level": "Class 12",
+      "subject": "Geography",
+      "title": "Bharat log aur arthvyasastha(Bhugol)",
+      "chapterCount": 9
+    },
+    {
+      "id": "lufh1",
+      "level": "Class 12",
+      "subject": "Geography",
+      "title": "Insani Jughrafia Ke Buniyadi Usool(Urdu)",
+      "chapterCount": 10
+    },
+    {
+      "id": "lugy1",
+      "level": "Class 12",
+      "subject": "Geography",
+      "title": " Hindustan Awam Aur Maishat(Urdu)",
+      "chapterCount": 12
+    },
+    {
+      "id": "lugy3",
+      "level": "Class 12",
+      "subject": "Geography",
+      "title": " Jughrafia Mein Aamli Kam(Urdu)",
+      "chapterCount": 6
+    },
+    {
+      "id": "lepy1",
+      "level": "Class 12",
+      "subject": "Psychology",
+      "title": "Psychology",
+      "chapterCount": 7
+    },
+    {
+      "id": "lhpy1",
+      "level": "Class 12",
+      "subject": "Psychology",
+      "title": "Manovigyan",
+      "chapterCount": 7
+    },
+    {
+      "id": "lupy1",
+      "level": "Class 12",
+      "subject": "Psychology",
+      "title": "Nafsiat(Urdu)",
+      "chapterCount": 9
+    },
+    {
+      "id": "lesy1",
+      "level": "Class 12",
+      "subject": "Sociology",
+      "title": "Indian Society",
+      "chapterCount": 7
+    },
+    {
+      "id": "lhsy1",
+      "level": "Class 12",
+      "subject": "Sociology",
+      "title": "Bhartiya Samaj",
+      "chapterCount": 7
+    },
+    {
+      "id": "lesy2",
+      "level": "Class 12",
+      "subject": "Sociology",
+      "title": "Social Change and Development in India",
+      "chapterCount": 8
+    },
+    {
+      "id": "lhsy2",
+      "level": "Class 12",
+      "subject": "Sociology",
+      "title": "Bharat main Samajik Parivartan aur Vikas",
+      "chapterCount": 8
+    },
+    {
+      "id": "luis1",
+      "level": "Class 12",
+      "subject": "Sociology",
+      "title": "Hindustani Samaj(Urdu)",
+      "chapterCount": 7
+    },
+    {
+      "id": "lusy2",
+      "level": "Class 12",
+      "subject": "Sociology",
+      "title": "Hindustan Mein Samaji Tabdili Aur Taraqqi(Urdu)",
+      "chapterCount": 8
+    },
+    {
+      "id": "lech1",
+      "level": "Class 12",
+      "subject": "Chemistry",
+      "title": "Chemistry-I",
+      "chapterCount": 5
+    },
+    {
+      "id": "lech2",
+      "level": "Class 12",
+      "subject": "Chemistry",
+      "title": "Chemistry-II",
+      "chapterCount": 5
+    },
+    {
+      "id": "lhch1",
+      "level": "Class 12",
+      "subject": "Chemistry",
+      "title": "Rasayan vigyan bhag I",
+      "chapterCount": 5
+    },
+    {
+      "id": "lhch2",
+      "level": "Class 12",
+      "subject": "Chemistry",
+      "title": "Rasayan vigyan bhag II",
+      "chapterCount": 5
+    },
+    {
+      "id": "luch1",
+      "level": "Class 12",
+      "subject": "Chemistry",
+      "title": "Keemiya-I",
+      "chapterCount": 9
+    },
+    {
+      "id": "luch2",
+      "level": "Class 12",
+      "subject": "Chemistry",
+      "title": "Keemiya-II",
+      "chapterCount": 7
+    },
+    {
+      "id": "lhsk1",
+      "level": "Class 12",
+      "subject": "Sanskrit",
+      "title": "Bhaswati",
+      "chapterCount": 10
+    },
+    {
+      "id": "lhsk2",
+      "level": "Class 12",
+      "subject": "Sanskrit",
+      "title": "Shaswati",
+      "chapterCount": 11
+    },
+    {
+      "id": "leps1",
+      "level": "Class 12",
+      "subject": "Political Science",
+      "title": "Contemporary World Politics",
+      "chapterCount": 7
+    },
+    {
+      "id": "lhps1",
+      "level": "Class 12",
+      "subject": "Political Science",
+      "title": "Samkalin Vishwa Rajniti",
+      "chapterCount": 7
+    },
+    {
+      "id": "leps2",
+      "level": "Class 12",
+      "subject": "Political Science",
+      "title": "Politics in India Since Independence",
+      "chapterCount": 8
+    },
+    {
+      "id": "lhps2",
+      "level": "Class 12",
+      "subject": "Political Science",
+      "title": "Swatantra Bharat Mein Rajniti-II",
+      "chapterCount": 8
+    },
+    {
+      "id": "lups1",
+      "level": "Class 12",
+      "subject": "Political Science",
+      "title": "Aasri Alami Siyasat(Urdu)",
+      "chapterCount": 9
+    },
+    {
+      "id": "luab1",
+      "level": "Class 12",
+      "subject": "Political Science",
+      "title": "Azadi Ke Baad Hindustan Ki Siyasat(Urdu)",
+      "chapterCount": 9
+    },
+    {
+      "id": "lehe1",
+      "level": "Class 12",
+      "subject": "Home Science",
+      "title": "Human Ecology and Family Sciences Part I ",
+      "chapterCount": 7
+    },
+    {
+      "id": "lehe2",
+      "level": "Class 12",
+      "subject": "Home Science",
+      "title": "Human Ecology and Family Sciences Part II ",
+      "chapterCount": 7
+    },
+    {
+      "id": "lehh1",
+      "level": "Class 12",
+      "subject": "Home Science",
+      "title": "Manav Paristhitik avam Parivar Vigyan Bhag 1 ",
+      "chapterCount": 7
+    },
+    {
+      "id": "lehh2",
+      "level": "Class 12",
+      "subject": "Home Science",
+      "title": "Manav Paristhitiki avam Parivar Vigyan Bhag 2",
+      "chapterCount": 7
+    },
+    {
+      "id": "leec2",
+      "level": "Class 12",
+      "subject": "Economics",
+      "title": "Introductory Microeconomics",
+      "chapterCount": 5
+    },
+    {
+      "id": "leec1",
+      "level": "Class 12",
+      "subject": "Economics",
+      "title": "Introductory Macroeconomics",
+      "chapterCount": 6
+    },
+    {
+      "id": "lhec2",
+      "level": "Class 12",
+      "subject": "Economics",
+      "title": "Vyashthi Arthshasrta",
+      "chapterCount": 5
+    },
+    {
+      "id": "lhec1",
+      "level": "Class 12",
+      "subject": "Economics",
+      "title": "Samashty Arthshastra Ek Parichay",
+      "chapterCount": 6
+    },
+    {
+      "id": "lume1",
+      "level": "Class 12",
+      "subject": "Economics",
+      "title": "Juzvi Maashiyat ka Taruf(Urdu)",
+      "chapterCount": 6
+    },
+    {
+      "id": "lume2",
+      "level": "Class 12",
+      "subject": "Economics",
+      "title": "Kulli Maashiyat Ka Taruf(Urdu)",
+      "chapterCount": 6
+    },
+    {
+      "id": "lebs1",
+      "level": "Class 12",
+      "subject": "Business Studies",
+      "title": "Business Studies-I",
+      "chapterCount": 8
+    },
+    {
+      "id": "lhbs1",
+      "level": "Class 12",
+      "subject": "Business Studies",
+      "title": "Vyavasai Adhyan-I",
+      "chapterCount": 8
+    },
+    {
+      "id": "lebs2",
+      "level": "Class 12",
+      "subject": "Business Studies",
+      "title": "Business Studies-II",
+      "chapterCount": 3
+    },
+    {
+      "id": "lhbs2",
+      "level": "Class 12",
+      "subject": "Business Studies",
+      "title": "Vyavasai Adhyan-II",
+      "chapterCount": 3
+    },
+    {
+      "id": "lubs1",
+      "level": "Class 12",
+      "subject": "Business Studies",
+      "title": "Karobari Uloom I(Urdu)",
+      "chapterCount": 8
+    },
+    {
+      "id": "lubs2",
+      "level": "Class 12",
+      "subject": "Business Studies",
+      "title": "Karobari Uloom II(Urdu)",
+      "chapterCount": 4
+    },
+    {
+      "id": "luga1",
+      "level": "Class 12",
+      "subject": "Urdu",
+      "title": "Gulistan-e- Adab",
+      "chapterCount": 12
+    },
+    {
+      "id": "luku1",
+      "level": "Class 12",
+      "subject": "Urdu",
+      "title": "Khayaban-e-Urdu",
+      "chapterCount": 6
+    },
+    {
+      "id": "luna1",
+      "level": "Class 12",
+      "subject": "Urdu",
+      "title": "Nai Awaz",
+      "chapterCount": 16
+    },
+    {
+      "id": "ludh1",
+      "level": "Class 12",
+      "subject": "Urdu",
+      "title": "Dhanak",
+      "chapterCount": 12
+    },
+    {
+      "id": "luhc1",
+      "level": "Class 12",
+      "subject": "Heritage Crafts",
+      "title": "Hindustan me Dastkari Ki Riwayat",
+      "chapterCount": 9
+    },
+    {
+      "id": "lehc1",
+      "level": "Class 12",
+      "subject": "Heritage Crafts",
+      "title": "Craft Tradition of India",
+      "chapterCount": 9
+    },
+    {
+      "id": "lhhc1",
+      "level": "Class 12",
+      "subject": "Heritage Crafts",
+      "title": "Bharatiya Hastkla Ki Paramparayen",
+      "chapterCount": 9
+    },
+    {
+      "id": "legd1",
+      "level": "Class 12",
+      "subject": "New Age Graphics Design",
+      "title": "New Age Graphics Design",
+      "chapterCount": 12
+    },
+    {
+      "id": "khsr2",
+      "level": "Class 12",
+      "subject": "Creative Writing & Translation",
+      "title": "Srijan-II",
+      "chapterCount": 4
+    },
+    {
+      "id": "lucw1",
+      "level": "Class 12",
+      "subject": "Creative Writing & Translation",
+      "title": "Takhleequi Jauhar",
+      "chapterCount": 11
+    },
+    {
+      "id": "lefa1",
+      "level": "Class 12",
+      "subject": "Fine Art",
+      "title": "An Introduction to Indian Art Part-II",
+      "chapterCount": 8
+    },
+    {
+      "id": "lhfa1",
+      "level": "Class 12",
+      "subject": "Fine Art",
+      "title": "Bhartiya Kala ka Itihaas Bhag 2",
+      "chapterCount": 8
+    },
+    {
+      "id": "lecs1",
+      "level": "Class 12",
+      "subject": "Computer Science",
+      "title": "Computer Science",
+      "chapterCount": 13
+    },
+    {
+      "id": "leip1",
+      "level": "Class 12",
+      "subject": "Informatics Practices",
+      "title": "Informatics Practices",
+      "chapterCount": 7
+    },
+    {
+      "id": "lstp1",
+      "level": "Class 12",
+      "subject": "Sangeet",
+      "title": "Tabla evam Pakhawaj",
+      "chapterCount": 7
+    },
+    {
+      "id": "lsgv1",
+      "level": "Class 12",
+      "subject": "Sangeet",
+      "title": "Hindustani Sangeet Gayan Evam Vaadan",
+      "chapterCount": 9
+    }
+  ]
+}
