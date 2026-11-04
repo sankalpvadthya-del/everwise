@@ -15,13 +15,13 @@ import { saveStudentProfile } from "@/lib/student-profile-save";
 
 export function AccountView({ settings = false }: { settings?: boolean }) {
   const profile = useQuery(profileQ()); const qc = useQueryClient();
-  const [name, setName] = useState(""); const [level, setLevel] = useState(""); const [subjects, setSubjects] = useState(""); const [goals, setGoals] = useState(""); const [daily, setDaily] = useState(30);
+  const [name, setName] = useState(""); const [goals, setGoals] = useState(""); const [daily, setDaily] = useState(30);
   const [autocorrect, setAutocorrect] = useState(true); const [dark, setDark] = useState(false); const [busy, setBusy] = useState(false);
   const [academic, setAcademic] = useState<StudentDraft>(academicDraft(null));
   useEffect(() => {
     const p = profile.data;
     setAcademic(academicDraft(p));
-    if (p) { setName(p.display_name ?? ""); setLevel(p.academic_level ?? ""); setSubjects(p.subjects.join(", ")); setGoals(p.learning_goals ?? ""); setDaily(p.daily_study_goal); const pref = p.preferences; setAutocorrect(!(pref && typeof pref === "object" && !Array.isArray(pref) && pref["autocorrect"] === false)); }
+    if (p) { setName(p.display_name ?? ""); setGoals(p.learning_goals ?? ""); setDaily(p.daily_study_goal); const pref = p.preferences; setAutocorrect(!(pref && typeof pref === "object" && !Array.isArray(pref) && pref["autocorrect"] === false)); }
     setDark(document.documentElement.classList.contains("dark"));
   }, [profile.data]);
   const save = async () => {

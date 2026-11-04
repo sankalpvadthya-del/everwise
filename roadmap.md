@@ -9,7 +9,7 @@
 - [x] Test presentation data mapping and verify historical, empty, light/dark and narrow-screen states (empty-history browser responses simulated without changing stored data).
 
 # Student onboarding and profile
-- [ ] Add resumable onboarding for newly registered students without redirecting existing users.
-- [ ] Reuse profile and preferences for editable academic context and daily goals.
-- [ ] Personalize dashboard with saved context, recorded daily progress and revision tasks.
-- [ ] Test onboarding rules, profile persistence and existing learning flows.
+- [x] Add resumable onboarding for newly registered students without redirecting existing users.
+- [x] Reuse profile and preferences for editable academic context and daily goals.
+- [x] Personalize dashboard with saved context, recorded daily progress and revision tasks.
+- [x] Test onboarding rules, real profile persistence, resume, fresh signed-in context, themes and existing learning pages; full new-account email confirmation remains unverified.
