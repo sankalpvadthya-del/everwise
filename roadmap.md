@@ -13,3 +13,9 @@
 - [x] Reuse profile and preferences for editable academic context and daily goals.
 - [x] Personalize dashboard with saved context, recorded daily progress and revision tasks.
 - [x] Test onboarding rules, real profile persistence, resume, fresh signed-in context, themes and existing learning pages; full new-account email confirmation remains unverified.
+
+# Curriculum-aware study creation
+- [ ] Verify official textbook catalogue and retrieval sources.
+- [ ] Add profile-based cascading selections, textbook import and upload fallback.
+- [ ] Ground lessons and questions across chapter sections with teaching preferences and verified references.
+- [ ] Test official Class 10 Science import, saved topic, upload alternatives and existing learning flows.
