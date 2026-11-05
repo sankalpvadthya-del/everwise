@@ -97,17 +97,6 @@ export const explainTopic = createServerFn({ method: "POST" })
     const saved = await context.supabase.from("topics").update({ explanation: exp, updated_at: new Date().toISOString() }).eq("id", t.id);
     if (saved.error) throw new Error("Could not save the explanation. Please retry.");
     return exp;
-    /* Legacy shape retained in the schema above; all supplied chapter batches are now processed. */
-    /* const exp =
-      providerName() === "fastapi"
-        ? await callFastApi(`/api/topics/${t.id}/explain`, { topic: t }, ExplanationSchema, bearer())
-        : await aiJson(
-            `Explain this topic for a student. Be clear and concise.\n${material(t)}`,
-            ExplanationSchema,
-            `{"overview":string,"key_concepts":[{"name":string,"detail":string}],"definitions":[{"term":string,"definition":string}],"steps":[string],"examples":[string],"misconceptions":[string],"summary":string,"grounding":"source"|"general"|"mixed"}`,
-          );
-    await context.supabase.from("topics").update({ explanation: exp, updated_at: new Date().toISOString() }).eq("id", t.id);
-    return exp; */
   });
 
 export const generateQuestions = createServerFn({ method: "POST" })
