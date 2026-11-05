@@ -16,3 +16,5 @@
 - Finalize recall through the owner-scoped, row-locked database function; score, memory evidence, weak spots and scheduling commit together to prevent partial or duplicate completion.
 - Keep memory chart transformations in a pure presentation module and reuse the existing engine for fitted estimates; visualisation must not change scoring or scheduling.
 - Enroll new signups explicitly through versioned metadata, keep resumable onboarding and academic extras in existing profile preferences, and preserve unrelated preferences when saving; unmarked existing users are never enrolled implicitly.
+- Keep curriculum provenance and per-study teaching settings in topic metadata; registry-owned textbook retrieval stays authenticated and browser PDF parsing retains page references, avoiding schema changes and unsafe arbitrary downloads.
+- Process every imported source chunk when explaining and include whole-chapter grounding for questions; validate generated source identifiers before persisting references so chapter endings and citation integrity are preserved.

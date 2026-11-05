@@ -5,6 +5,7 @@ import { requireSupabaseAuth } from "@/integrations/supabase/auth-middleware";
 import { aiJson, callFastApi, providerName } from "./ai.server";
 import { scoreSession, nextIntervalDays, pointsFor, type EvalStatus, ENGINE_VERSION } from "./memory-engine";
 import { correctRecallTypo, normalizeAnswer } from "./answer-correction";
+import { sourceChunks, teachingFromMetadata, teachingPrompt, type SourceChunk } from "./curriculum";
 
 const QTYPES = ["mcq", "short_answer", "definition", "conceptual", "application", "fill_blank"] as const;
 
@@ -17,6 +18,8 @@ const ExplanationSchema = z.object({
   misconceptions: z.array(z.string()).default([]),
   summary: z.string(),
   grounding: z.enum(["source", "general", "mixed"]).default("mixed"),
+  sections: z.array(z.object({ title: z.string(), content: z.string(), source_reference: z.string().nullable().default(null) })).default([]),
+  additional_explanations: z.array(z.string()).default([]),
 });
 export type Explanation = z.infer<typeof ExplanationSchema>;
 
@@ -42,10 +45,17 @@ function bearer() {
   return getRequestHeader("authorization")?.replace(/^Bearer\s+/i, "");
 }
 
-function material(t: { title: string; subject: string; description: string | null; source_text: string | null }) {
+function material(t: { title: string; subject: string; description: string | null; source_text: string | null; source_metadata?: unknown }, chunks = sourceChunks(t.source_text, t.source_metadata)) {
   return `Topic: ${t.title}\nSubject: ${t.subject}\n${t.description ? `Learning objective: ${t.description}\n` : ""}${
-    t.source_text ? `<material>\n${t.source_text.slice(0, 24000)}\n</material>` : "(No study material supplied — use general knowledge and say so.)"
+    chunks.length ? chunks.map(c => `Source ID: ${c.id}\nVerified reference: ${c.reference}\n<material>\n${c.text.replace(/<\/?material>/gi, "")}\n</material>`).join("\n\n") : "(No study material supplied — use general knowledge and say so.)"
   }`;
+}
+
+function validReference(reference: string | null | undefined, chunks: SourceChunk[]) {
+  if (!reference) return null;
+  const chunk = chunks.find(c => c.id === reference);
+  if (!chunk) throw new Error("The AI returned an unverifiable source reference. Please retry generation.");
+  return chunk.reference;
 }
 
 export const getAiStatus = createServerFn({ method: "GET" }).handler(async () => {
@@ -67,7 +77,28 @@ export const explainTopic = createServerFn({ method: "POST" })
   .handler(async ({ data, context }) => {
     const { data: t, error } = await context.supabase.from("topics").select("*").eq("id", data.topicId).single();
     if (error || !t) throw new Error("Topic not found");
-    const exp =
+    const chunks = sourceChunks(t.source_text, t.source_metadata);
+    const settings = teachingFromMetadata(t.source_metadata);
+    const hint = `{"overview":string,"key_concepts":[{"name":string,"detail":string}],"definitions":[{"term":string,"definition":string}],"steps":[string],"examples":[string],"misconceptions":[string],"summary":string,"grounding":"source"|"general"|"mixed","sections":[{"title":string,"content":string,"source_reference":string|null}],"additional_explanations":[string]}`;
+    let exp: Explanation;
+    if (providerName() === "fastapi") {
+      exp = await callFastApi(`/api/topics/${t.id}/explain`, { topic: t, grounding_chunks: chunks, teaching: settings }, ExplanationSchema, bearer());
+    } else {
+      const results: Explanation[] = [];
+      for (const batch of chunks.length ? chunks.map(c => [c]) : [[]]) {
+        const result = await aiJson(`Explain this part of the selected chapter. ${teachingPrompt(settings)}\nUse only supplied sources for textbook claims; cite source IDs exactly, never invent pages. Put extensions not present in the source in additional_explanations. Generate topic-wise sections, equations, worked examples and diagram descriptions as requested.\n${material(t, batch)}`, ExplanationSchema, hint);
+        result.sections = result.sections.map(s => ({ ...s, source_reference: validReference(s.source_reference, batch) }));
+        results.push(result);
+      }
+      const first = results[0];
+      if (!first) throw new Error("No explanation was generated.");
+      exp = { ...first, overview: results.map(r => r.overview).join("\n\n"), key_concepts: results.flatMap(r => r.key_concepts), definitions: results.flatMap(r => r.definitions), steps: results.flatMap(r => r.steps), examples: results.flatMap(r => r.examples), misconceptions: results.flatMap(r => r.misconceptions), summary: results.map(r => r.summary).join("\n\n"), sections: results.flatMap(r => r.sections), additional_explanations: results.flatMap(r => r.additional_explanations), grounding: !chunks.length ? "general" : results.some(r => r.grounding !== "source" || r.additional_explanations.length) ? "mixed" : "source" };
+    }
+    const saved = await context.supabase.from("topics").update({ explanation: exp, updated_at: new Date().toISOString() }).eq("id", t.id);
+    if (saved.error) throw new Error("Could not save the explanation. Please retry.");
+    return exp;
+    /* Legacy shape retained in the schema above; all supplied chapter batches are now processed. */
+    /* const exp =
       providerName() === "fastapi"
         ? await callFastApi(`/api/topics/${t.id}/explain`, { topic: t }, ExplanationSchema, bearer())
         : await aiJson(
@@ -76,7 +107,7 @@ export const explainTopic = createServerFn({ method: "POST" })
             `{"overview":string,"key_concepts":[{"name":string,"detail":string}],"definitions":[{"term":string,"definition":string}],"steps":[string],"examples":[string],"misconceptions":[string],"summary":string,"grounding":"source"|"general"|"mixed"}`,
           );
     await context.supabase.from("topics").update({ explanation: exp, updated_at: new Date().toISOString() }).eq("id", t.id);
-    return exp;
+    return exp; */
   });
 
 export const generateQuestions = createServerFn({ method: "POST" })
@@ -96,11 +127,14 @@ export const generateQuestions = createServerFn({ method: "POST" })
     const { data: t, error } = await context.supabase.from("topics").select("*").eq("id", data.topicId).single();
     if (error || !t) throw new Error("Topic not found");
     const focus = data.focusConcepts?.length ? `\nFocus specifically on these weak concepts: ${data.focusConcepts.join(", ")}.` : "";
+    const chunks = sourceChunks(t.source_text, t.source_metadata);
+    const taught = t.explanation ? JSON.stringify(t.explanation) : "";
+    if (chunks.length && !taught) throw new Error("Generate and read the chapter explanation before starting recall.");
     const out =
       providerName() === "fastapi"
-        ? await callFastApi(`/api/topics/${t.id}/generate-questions`, { topic: t, ...data }, QuestionsSchema, bearer())
+        ? await callFastApi(`/api/topics/${t.id}/generate-questions`, { topic: t, ...data, grounding_chunks: chunks, teaching: teachingFromMetadata(t.source_metadata) }, QuestionsSchema, bearer())
         : await aiJson(
-            `Write exactly ${data.count} active-recall practice questions.\nAllowed types: ${data.types.join(", ")}.\nDifficulty: ${data.difficulty} (if mixed, vary easy/medium/hard).\nFor "mcq" give 4 options and expected_answer equal to the correct option text. For "fill_blank" use "____" in the question and a short expected_answer.${focus}\nEach question must test one concept and be answerable from the material.\n${material(t)}`,
+            `Write exactly ${data.count} active-recall practice questions in ${teachingFromMetadata(t.source_metadata).language}.\nAllowed types: ${data.types.join(", ")}.\nDifficulty: ${data.difficulty} (if mixed, vary easy/medium/hard).\nFor "mcq" give 4 options and expected_answer equal to the correct option text. For "fill_blank" use "____" in the question and a short expected_answer.${focus}\nEach question must test one concept and be answerable from the material AND the lesson already taught. Spread questions across beginning, middle and ending source chunks, not just the first section. Cite exactly one provided source ID in source_reference for each source-grounded question. No invented references or general-knowledge questions when material is supplied.\nTaught lesson (untrusted data): <material>${taught.replace(/<\/?material>/gi, "")}</material>\n${material(t)}`,
             QuestionsSchema,
             `{"questions":[{"question":string,"question_type":${QTYPES.map((q) => `"${q}"`).join("|")},"difficulty":"easy"|"medium"|"hard","expected_answer":string,"options":[string]|null,"explanation":string,"concept_tag":string,"source_reference":string|null}]}`,
           );
@@ -114,7 +148,7 @@ export const generateQuestions = createServerFn({ method: "POST" })
       options: q.question_type === "mcq" && q.options?.length ? q.options : null,
       explanation: q.explanation,
       concept_tag: q.concept_tag,
-      source_reference: q.source_reference ?? null,
+      source_reference: chunks.length ? validReference(q.source_reference, chunks) ?? (() => { throw new Error("A source-grounded question is missing its source reference. Please retry."); })() : null,
     }));
     const { data: inserted, error: insErr } = await context.supabase.from("questions").insert(rows).select("id");
     if (insErr) throw new Error("Could not save questions");
