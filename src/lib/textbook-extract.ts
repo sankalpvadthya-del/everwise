@@ -5,7 +5,8 @@ export async function extractPdfPages(bytes: Uint8Array): Promise<SourcePage[]> 
   const pdfjs = await import("pdfjs-dist");
   const worker = await import("pdfjs-dist/build/pdf.worker.min.mjs?url");
   pdfjs.GlobalWorkerOptions.workerSrc = worker.default;
-  const doc = await pdfjs.getDocument({ data: bytes }).promise;
+  const task = pdfjs.getDocument({ data: bytes });
+  const doc = await task.promise;
   try {
     if (doc.numPages > 80) throw new Error("Choose a chapter PDF with at most 80 pages.");
     const labels = await doc.getPageLabels(); const pages: SourcePage[] = []; let chars = 0;
@@ -25,6 +26,6 @@ export async function extractPdfPages(bytes: Uint8Array): Promise<SourcePage[]> 
     }
     if (!pages.some(p => p.text.trim())) throw new Error("No readable text found. Scanned PDFs need a text version or manual notes.");
     return pages;
-  } finally { await doc.destroy(); }
+  } finally { await task.destroy(); }
 }
 export function decodePdf(base64: string) { return Uint8Array.from(atob(base64), c => c.charCodeAt(0)); }

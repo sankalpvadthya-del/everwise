@@ -8,6 +8,7 @@ import { ChevronLeft, Loader2, Sparkles, Trash2, RefreshCw, Lightbulb, AlertTria
 import { topicQ } from "@/lib/queries";
 import { explainTopic, generateQuestions, type Explanation } from "@/lib/ai.functions";
 import { supabase } from "@/integrations/supabase/client";
+import { objectValue, approvedSourceUrl } from "@/lib/curriculum";
 import { PageHeader, Loading, EmptyState, Pill } from "@/components/ui-bits";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -69,7 +70,7 @@ function TopicPage() {
   if (topic.error || !topic.data) return <EmptyState title="Topic not found" body="It may have been deleted." action={<Button asChild><Link to="/learn">Back to topics</Link></Button>} />;
   const t = topic.data;
   const exp = t.explanation as Explanation | null;
-  const meta = t.source_metadata as { file_name?: string } | null;
+  const meta = objectValue(t.source_metadata);
 
   const start = async () => {
     if (!types.length) { toast.error("Choose at least one question type"); return; }
@@ -109,7 +110,8 @@ function TopicPage() {
         }
       />
       <div className="mb-6 flex flex-wrap gap-2">
-        {meta?.file_name && <Pill tone="brand"><BookMarked className="size-3" /> {meta.file_name}</Pill>}
+        {typeof meta["file_name"] === "string" && <Pill tone="brand"><BookMarked className="size-3" /> {meta["file_name"]}</Pill>}
+        {meta["kind"] === "official_textbook" && t.source_text && typeof meta["source_url"] === "string" && approvedSourceUrl(meta["source_url"]) && <a href={meta["source_url"]} target="_blank" rel="noreferrer" className="text-sm text-brand underline">NCERT · {String(meta["textbook"] ?? "Textbook")} · {String(meta["reprint"] ?? "Retrieved publication")} · Official PDF</a>}
         {!t.source_text && <Pill>No study material — uses general AI knowledge</Pill>}
         {t.exam_date && <Pill tone="warning">Exam {t.exam_date}</Pill>}
       </div>
@@ -178,6 +180,8 @@ function ExplanationView({ e }: { e: Explanation }) {
         </p>
       )}
       <p className="text-base">{e.overview}</p>
+      {!!e.sections?.length && <div className="space-y-5">{e.sections.map((section, index) => <section key={index} className="border-b pb-4"><h3 className="mb-2 font-semibold">{section.title}</h3><p className="whitespace-pre-wrap">{section.content}</p>{section.source_reference && <p className="mt-2 text-xs text-muted-foreground">Source: {section.source_reference}</p>}</section>)}</div>}
+      {!!e.additional_explanations?.length && <div className="space-y-2 border-l-2 border-warning pl-4"><h3 className="font-semibold">Additional teacher explanations · beyond the supplied text</h3>{e.additional_explanations.map((text, index) => <p key={index}>{text}</p>)}</div>}
       {e.key_concepts.length > 0 && (
         <div>
           <h3 className="mb-2 font-semibold">Key concepts</h3>
