@@ -118,7 +118,7 @@ export function StudyCreation() {
     const preliminaryText = contents?.pages.map(p => p.text).join("\n") ?? "";
     const edition = preliminaryText.match(/Revised Edition[^\n]{0,80}/i)?.[0] ?? null;
     const reprint = preliminaryText.match(/Reprint\s+\d{4}[-–]\d{2,4}/i)?.[0] ?? null;
-    const metadata = { version: 1, kind: official ? "official_textbook" : file ? "upload" : "notes", board, academic_level: level, academic_year: year, teaching: settings.data,
+    const metadata = { version: 1, kind: official ? "official_textbook" : file ? "upload" : text ? "notes" : "topic", board: ctxBoard, academic_level: ctxLevel, academic_year: ctxYear, teaching: settings.data,
       ...(official ? { publisher: "NCERT", textbook_id: bookId, textbook: book?.title, chapter_number: Number(chapterNumber), chapter: chapter?.title, edition, reprint, source_url: chapterData?.url, contents_url: contents?.url, retrieved_at: chapterData?.retrievedAt, catalogue_verified_at: NCERT_CATALOGUE.verifiedAt, ...(selectedSection ? { section: selectedSection.title, section_id: selectedSection.id } : {}) } : {}),
       ...(pages ? { pages } : {}), ...(file && !official ? { file_name: file.name } : {}), chars: text.length };
     setSaving(true);
