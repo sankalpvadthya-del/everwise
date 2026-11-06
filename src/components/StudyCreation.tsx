@@ -98,7 +98,11 @@ export function StudyCreation() {
   };
   const save = async (event: React.FormEvent) => {
     event.preventDefault(); setError("");
-    if (!board || !level || !subject.trim() || !year.trim()) { setError("Choose your board, class, subject and academic year."); return; }
+    // Academic context comes from the saved student profile; students are never required to re-enter it here.
+    const ctxBoard = board || draft.board || "General";
+    const ctxLevel = level || draft.level || "General";
+    const ctxSubject = subject.trim() || draft.subjects[0] || "General";
+    const ctxYear = year.trim() || draft.year || "";
     const settings = teachingSchema.safeParse(teaching);
     if (!settings.success) { setError("Choose a language and at least one content section."); return; }
     const official = source === "NCERT";
@@ -107,7 +111,7 @@ export function StudyCreation() {
     let pages = official ? chapterData?.pages : file?.pages;
     const selectedSection = sections.find(s => s.id === sectionId);
     if (official && selectedSection) { text = text.slice(selectedSection.start, selectedSection.end); pages = undefined; }
-    if (!text.trim()) { setError("Add readable study material before starting."); return; }
+    // Notes are optional: a topic name alone is enough to start learning from general AI knowledge.
     if (text.length > MAX_IMPORT_CHARS) { setError("Choose a smaller chapter or section; material must not exceed 120,000 characters."); return; }
     const topicTitle = official ? (selectedSection ? `${chapter?.title} — ${selectedSection.title}` : chapter?.title ?? "") : title.trim();
     if (topicTitle.length < 2 || topicTitle.length > 200) { setError("Topic name must be between 2 and 200 characters."); return; }
