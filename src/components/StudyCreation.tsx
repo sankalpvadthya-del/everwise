@@ -123,7 +123,7 @@ export function StudyCreation() {
       ...(pages ? { pages } : {}), ...(file && !official ? { file_name: file.name } : {}), chars: text.length };
     setSaving(true);
     try {
-      const { data, error: saveError } = await supabase.from("topics").insert({ title: topicTitle, subject: subject.trim(), description: `${settings.data.objective} · ${level} · ${board}`, source_text: text, source_metadata: metadata as Json, exam_date: examDate || null }).select("id").single();
+      const { data, error: saveError } = await supabase.from("topics").insert({ title: topicTitle, subject: ctxSubject, description: `${settings.data.objective} · ${ctxLevel} · ${ctxBoard}`, source_text: text || null, source_metadata: metadata as Json, exam_date: examDate || null }).select("id").single();
       if (saveError) throw new Error(saveError.message);
       await qc.invalidateQueries({ queryKey: ["topics"] });
       await navigate({ to: "/learn/$topicId", params: { topicId: data.id }, search: { explain: true } });
