@@ -19,3 +19,8 @@
 - [ ] Add profile-based cascading selections, textbook import and upload fallback.
 - [ ] Ground lessons and questions across chapter sections with teaching preferences and verified references.
 - [ ] Test official Class 10 Science import, saved topic, upload alternatives and existing learning flows.
+
+# Separate profile from topic learning (bug fix)
+- [x] Make notes optional on Learn a New Topic; topic name alone starts learning.
+- [x] Use saved student profile as academic context instead of requiring re-entry.
+- [x] Verify topic-only explanation + question generation, profile page and recall flow; build OK, 48 tests pass.

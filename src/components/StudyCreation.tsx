@@ -98,7 +98,11 @@ export function StudyCreation() {
   };
   const save = async (event: React.FormEvent) => {
     event.preventDefault(); setError("");
-    if (!board || !level || !subject.trim() || !year.trim()) { setError("Choose your board, class, subject and academic year."); return; }
+    // Academic context comes from the saved student profile; students are never required to re-enter it here.
+    const ctxBoard = board || draft.board || "General";
+    const ctxLevel = level || draft.level || "General";
+    const ctxSubject = subject.trim() || draft.subjects[0] || "General";
+    const ctxYear = year.trim() || draft.year || "";
     const settings = teachingSchema.safeParse(teaching);
     if (!settings.success) { setError("Choose a language and at least one content section."); return; }
     const official = source === "NCERT";
@@ -107,19 +111,19 @@ export function StudyCreation() {
     let pages = official ? chapterData?.pages : file?.pages;
     const selectedSection = sections.find(s => s.id === sectionId);
     if (official && selectedSection) { text = text.slice(selectedSection.start, selectedSection.end); pages = undefined; }
-    if (!text.trim()) { setError("Add readable study material before starting."); return; }
+    // Notes are optional: a topic name alone is enough to start learning from general AI knowledge.
     if (text.length > MAX_IMPORT_CHARS) { setError("Choose a smaller chapter or section; material must not exceed 120,000 characters."); return; }
     const topicTitle = official ? (selectedSection ? `${chapter?.title} — ${selectedSection.title}` : chapter?.title ?? "") : title.trim();
     if (topicTitle.length < 2 || topicTitle.length > 200) { setError("Topic name must be between 2 and 200 characters."); return; }
     const preliminaryText = contents?.pages.map(p => p.text).join("\n") ?? "";
     const edition = preliminaryText.match(/Revised Edition[^\n]{0,80}/i)?.[0] ?? null;
     const reprint = preliminaryText.match(/Reprint\s+\d{4}[-–]\d{2,4}/i)?.[0] ?? null;
-    const metadata = { version: 1, kind: official ? "official_textbook" : file ? "upload" : "notes", board, academic_level: level, academic_year: year, teaching: settings.data,
+    const metadata = { version: 1, kind: official ? "official_textbook" : file ? "upload" : text ? "notes" : "topic", board: ctxBoard, academic_level: ctxLevel, academic_year: ctxYear, teaching: settings.data,
       ...(official ? { publisher: "NCERT", textbook_id: bookId, textbook: book?.title, chapter_number: Number(chapterNumber), chapter: chapter?.title, edition, reprint, source_url: chapterData?.url, contents_url: contents?.url, retrieved_at: chapterData?.retrievedAt, catalogue_verified_at: NCERT_CATALOGUE.verifiedAt, ...(selectedSection ? { section: selectedSection.title, section_id: selectedSection.id } : {}) } : {}),
       ...(pages ? { pages } : {}), ...(file && !official ? { file_name: file.name } : {}), chars: text.length };
     setSaving(true);
     try {
-      const { data, error: saveError } = await supabase.from("topics").insert({ title: topicTitle, subject: subject.trim(), description: `${settings.data.objective} · ${level} · ${board}`, source_text: text, source_metadata: metadata as Json, exam_date: examDate || null }).select("id").single();
+      const { data, error: saveError } = await supabase.from("topics").insert({ title: topicTitle, subject: ctxSubject, description: `${settings.data.objective} · ${ctxLevel} · ${ctxBoard}`, source_text: text || null, source_metadata: metadata as Json, exam_date: examDate || null }).select("id").single();
       if (saveError) throw new Error(saveError.message);
       await qc.invalidateQueries({ queryKey: ["topics"] });
       await navigate({ to: "/learn/$topicId", params: { topicId: data.id }, search: { explain: true } });
@@ -148,7 +152,7 @@ export function StudyCreation() {
           <div className="space-y-2"><Label htmlFor="topic-title">Topic or chapter name</Label><Input id="topic-title" value={title} maxLength={200} onChange={e => setTitle(e.target.value)} /></div>
           <label className="flex cursor-pointer flex-col items-center gap-2 rounded-lg border border-dashed p-6 text-sm text-muted-foreground focus-within:ring-2 focus-within:ring-ring"><FileUp className="size-5" /><span>Upload PDF, DOCX, TXT or MD · up to 10 MB</span><input type="file" className="sr-only" accept=".pdf,.docx,.txt,.md" disabled={busy} onChange={e => { void upload(e.target.files?.[0]); e.target.value = ""; }} /></label>
           {file && <div className="flex items-center justify-between gap-2 rounded-md bg-muted px-3 py-2 text-sm"><span className="min-w-0 break-all">{file.name}</span><Button type="button" variant="ghost" size="icon" aria-label="Remove file" title="Remove file" onClick={() => { setFile(null); setNotes(""); }}><X className="size-4" /></Button></div>}
-          <div className="space-y-2"><Label htmlFor="study-notes">Study material / notes</Label><Textarea id="study-notes" rows={7} value={notes} onChange={e => { setNotes(e.target.value); if (file?.pages) setFile({ name: file.name }); }} disabled={busy} /><p className="text-right text-xs text-muted-foreground">{notes.length.toLocaleString()} / {MAX_IMPORT_CHARS.toLocaleString()} characters</p></div>
+          <div className="space-y-2"><Label htmlFor="study-notes">Study material / notes (optional)</Label><Textarea id="study-notes" rows={7} value={notes} onChange={e => { setNotes(e.target.value); if (file?.pages) setFile({ name: file.name }); }} disabled={busy} /><p className="text-right text-xs text-muted-foreground">{notes.length.toLocaleString()} / {MAX_IMPORT_CHARS.toLocaleString()} characters</p></div>
         </div>}
         {status && <p role="status" className="flex items-center gap-2 text-sm text-muted-foreground"><Loader2 className="size-4 animate-spin" />{status}</p>}
         {error && <div role="alert" className="space-y-2 rounded-md bg-danger-soft p-4 text-sm text-destructive"><p>{error}</p>{source === "NCERT" && <Button type="button" variant="outline" onClick={() => { setSource("Upload or notes"); clearBook(); }}>Use upload or notes instead</Button>}</div>}
@@ -157,7 +161,7 @@ export function StudyCreation() {
         <div className="grid gap-4 sm:grid-cols-3"><Choice label="Language" value={teaching.language} options={choices(["English", "Hindi", "Telugu", "Sanskrit", "Tamil", "Bengali", "Marathi", "Kannada", "Malayalam", teaching.language])} onChange={v => setTeaching({ ...teaching, language: v })} /><Choice label="Explanation depth" value={teaching.depth} options={choices(["Quick overview", "Standard", "Detailed teacher-style explanation"])} onChange={v => setTeaching({ ...teaching, depth: v as TeachingSettings["depth"] })} /><Choice label="Learning objective" value={teaching.objective} options={choices(["Conceptual understanding", "NCERT-focused learning", "CBSE examination preparation", "Important questions and answers", "Complete chapter preparation"])} onChange={v => setTeaching({ ...teaching, objective: v as TeachingSettings["objective"] })} /></div>
         <fieldset><legend className="mb-3 text-sm font-medium">Content sections</legend><div className="grid gap-3 sm:grid-cols-2">{CONTENT_SECTIONS.map(section => <label key={section} className="flex items-center gap-2 text-sm"><Checkbox checked={teaching.sections.includes(section)} onCheckedChange={checked => setTeaching({ ...teaching, sections: checked ? [...teaching.sections, section] : teaching.sections.filter(s => s !== section) })} />{section}</label>)}</div></fieldset>
       </div></details>
-      <div className="flex flex-wrap items-end justify-between gap-4"><div className="space-y-2"><Label htmlFor="exam-date">Exam date (optional)</Label><Input id="exam-date" type="date" value={examDate} onChange={e => setExamDate(e.target.value)} /></div><div className="flex gap-2"><Button asChild variant="ghost"><Link to="/learn">Cancel</Link></Button><Button type="submit" disabled={busy}>{saving ? <><Loader2 className="size-4 animate-spin" /> Saving…</> : "Import & Start Learning"}</Button></div></div>
+      <div className="flex flex-wrap items-end justify-between gap-4"><div className="space-y-2"><Label htmlFor="exam-date">Exam date (optional)</Label><Input id="exam-date" type="date" value={examDate} onChange={e => setExamDate(e.target.value)} /></div><div className="flex gap-2"><Button asChild variant="ghost"><Link to="/learn">Cancel</Link></Button><Button type="submit" disabled={busy}>{saving ? <><Loader2 className="size-4 animate-spin" /> Saving…</> : "Start Learning"}</Button></div></div>
     </form>
   </div>;
 }
